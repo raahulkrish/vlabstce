@@ -5,10 +5,14 @@ function enable() {
     document.getElementById("s1").disabled = false;
     }
 function timedText() {
+    setTimeout(myTimeout0, 900)
     setTimeout(myTimeout1, 1000) 
     setTimeout(myTimeout2, 1030) 
     setTimeout(myTimeout3, 1070)
     }
+function myTimeout0() {
+    document.getElementById('myImg').src = "p-n222.png";
+    } 
 function myTimeout1() {
     document.getElementById('myImg').src = "p-n2.png";
     }
