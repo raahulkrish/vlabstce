@@ -34,7 +34,7 @@
         <p class="border1" id="border2">
             <img id="myImg" src="p-n22.png" onload="this.onload=null;disable()" width="667.5" height="340.5" ><br><br>
             <button id="interval" onclick="timedText();this.disabled = true;">Form P-N Junction</button><br><br>
-            <button onclick="enable(); timedText1();fbias(s1.value);">Apply Voltage</button><br><br>
+            <button onclick="enable();">Apply Voltage</button><br><br>
             <button onClick="history.go(0)">Reload</button><br><br>
             <input id="s1" type="range" min="-5" max="5" step="0.05" value = "0" class="slider" oninput="bnn.value=s1.value" onchange="fbias(this.value);" /><br>
             <output id="bnn" name="Voltage" for="s1">0</output>
