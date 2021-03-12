@@ -9,10 +9,10 @@ h2 {font-size: 18px;line-height: 32px;color:linear-gradient(45deg,#000428,#004e9
 h3 {font-size: 18px;font-weight: bold;margin: 50px 0 20px;color:linear-gradient(45deg,#000428,#004e92);}
 h3::before {content: '💡';padding-right: 5px;}
 #intro{ background-color: #ffff;border: 1px solid #d1d5da;border-radius: 3px; padding: 18px;margin: 30px 0;line-height: 22px;}
-#border2{text-align: center; background:linear-gradient(45deg,#212800,#6b9200);border: 3px solid #535456;border-radius: 20px; padding: 18px;margin: 30px 0;line-height: 22px;}
+#border2{text-align: left; background:linear-gradient(45deg,#212800,#6b9200);border: 3px solid #535456;border-radius: 20px; padding: 18px;margin: 30px 0;line-height: 22px;}
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   grid-auto-rows: minmax(100px, auto);
 }
@@ -26,7 +26,7 @@ table th {font-weight: bold;text-transform: uppercase;background:linear-gradient
 table td {border-bottom: 1px solid black;padding: 0 20px;line-height: 40px;}
 strong {font-weight: bold;}
 footer {line-height: 50px;background: lightgray;font-size: 12px;padding: 0 50px;}
-.slider {   width: 30%; }
+.slider {   width: 100%; }
 @media only screen and (max-width: 750px)
 {
   nav {height: auto;line-height: 40px;padding: 20px;}
