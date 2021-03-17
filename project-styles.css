@@ -12,15 +12,19 @@ h3::before {content: '💡';padding-right: 5px;}
 #border2{text-align: left; background:linear-gradient(45deg,#212800,#6b9200);border: 3px solid #535456;border-radius: 20px; padding: 18px;margin: 30px 0;line-height: 22px;}
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
+  grid-auto-rows: minmax(500px, auto);
+}
+.wrapper1 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5px;
   grid-auto-rows: minmax(100px, auto);
 }
 
 .theory{
   text-align: justify;
-  margin-left: 10px;
-  margin-top: 10px;
   font-size: 20px;
   line-height: 30px;
   color: #ffffff;
@@ -36,7 +40,7 @@ table th {font-weight: bold;text-transform: uppercase;background:linear-gradient
 table td {border-bottom: 1px solid black;padding: 0 20px;line-height: 40px;}
 strong {font-weight: bold;}
 footer {line-height: 50px;background: lightgray;font-size: 12px;padding: 0 50px;}
-.slider {   width: 70%; }
+.slider {   width: 40%; }
 @media only screen and (max-width: 750px)
 {
   nav {height: auto;line-height: 40px;padding: 20px;}
@@ -47,8 +51,9 @@ footer {line-height: 50px;background: lightgray;font-size: 12px;padding: 0 50px;
 }
 .circuit
 {
-  background-image: url("Untitled.png");
-  background-size: 428px 258.8px;
+  padding-left: 30px;
+  background-image: url("1.png");
+  background-size: 535px 323.5px;
   background-repeat: no-repeat;
 }
 
