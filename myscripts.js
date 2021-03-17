@@ -1,7 +1,9 @@
 var check;
+
 function disable() {
     document.getElementById("s1").disabled = true;
     }
+
 function enable() {
     if (check==1)
     {
@@ -24,6 +26,7 @@ function timedText() {
    setTimeout(myTimeout4, 6070)
    
     }
+    
 function myTimeout00() {
     document.getElementById('myImg').src = "1.gif";
     } 
