@@ -54,3 +54,20 @@ function myTimeout4() {
     document.getElementById('myImg').src = "Snapshot_1.gif";
     check=1;
 }
+function currentval()
+{
+    var v=Number(document.getElementById("bnn").value);
+    var a= 40*v;
+    var b=Math.exp(a);
+    var c=Math.pow(10, -6);
+    var d= 3*c*b;
+    if(v>0.54)
+    {
+    document.getElementById("current").innerHTML= d;
+    }
+    else
+    {
+        document.getElementById("current").innerHTML= 0;
+
+    }
+}
