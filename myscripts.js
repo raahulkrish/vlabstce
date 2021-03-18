@@ -54,16 +54,86 @@ function myTimeout4() {
     document.getElementById('myImg').src = "Snapshot_1.gif";
     check=1;
 }
+
+function diodeval()
+{
+    var Vs=Number(document.getElementById("bnn").value);
+    var vd=0.53;
+    if(Vs>=0.54 && Vs<0.7)
+    {
+        document.getElementById("diode").innerHTML= 0.53+' '+ 'V';
+    }
+    else if(Vs>=0.7 && Vs<0.9)
+    {
+        document.getElementById("diode").innerHTML= 0.54+' '+ 'V';
+    }
+    else if(Vs>=0.9 && Vs<1.1)
+    {
+        document.getElementById("diode").innerHTML= 0.58+' '+ 'V';
+    }
+    else if(Vs>=1.1 && Vs<1.3)
+    {
+        document.getElementById("diode").innerHTML= 0.6+' '+ 'V';
+    }
+    else if(Vs>=1.3 && Vs<1.5)
+    {
+        document.getElementById("diode").innerHTML= 0.63+' '+ 'V';
+    }
+    else if(Vs>=1.5 && Vs<1.7)
+    {
+        document.getElementById("diode").innerHTML= 0.65+' '+ 'V';
+    }
+    else if(Vs>=1.7 && Vs<1.9)
+    {
+        document.getElementById("diode").innerHTML= 0.68+' '+ 'V';
+    }
+    else if(Vs>=1.9 && Vs<2.1)
+    {
+        document.getElementById("diode").innerHTML= 0.7+' '+ 'V';
+    }
+    else if(Vs>=2.1 && Vs<2.3)
+    {
+        document.getElementById("diode").innerHTML= 0.71+' '+ 'V';
+    }
+    else if(Vs>=2.3 && Vs<2.6)
+    {
+        document.getElementById("diode").innerHTML= 0.72+' '+ 'V';
+    }
+    else if(Vs>=2.6 && Vs<2.9)
+    {
+        document.getElementById("diode").innerHTML= 0.73+' '+ 'V';
+    }
+    else if(Vs>=2.9 && Vs<3.3)
+    {
+        document.getElementById("diode").innerHTML= 0.74+' '+ 'V';
+    }
+    else if(Vs>=3.3 && Vs<3.6)
+    {
+        document.getElementById("diode").innerHTML= 0.75+' '+ 'V';
+    }
+    else if(Vs>=3.6 && Vs<4.1)
+    {
+        document.getElementById("diode").innerHTML= 0.76+' '+ 'V';
+    }
+    else if(Vs>=4.1)
+    {
+        document.getElementById("diode").innerHTML= 0.77+' '+ 'V';
+    }
+    else
+    {
+        document.getElementById("diode").innerHTML= 0+' '+ 'V';
+    }
+}
 function currentval()
 {
-    var v=Number(document.getElementById("bnn").value);
-    var a= 40*v;
-    var b=Math.exp(a);
-    var c=Math.pow(10, -6);
-    var d= 3*c*b;
-    if(v>0.54)
-    {
-    document.getElementById("current").innerHTML= d;
+    var Vs=Number(document.getElementById("bnn").value);
+    var vd=0.53;
+    if(Vs>=0.54)
+    {    
+    var V = Vs-vd;
+    var r = 1000;
+    var I = V/r;
+    document.getElementById("current").innerHTML= I +' '+ 'A';  
     }
     else
     {
