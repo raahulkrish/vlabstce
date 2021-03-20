@@ -132,12 +132,13 @@ function currentval()
     {    
     var V = Vs-vd;
     var r = 1000;
-    var I = V/r;
-    document.getElementById("current").innerHTML= I +' '+ 'A';  
+    var Cur = V/r*1000;
+    var I = Cur.toFixed(3);
+    document.getElementById("current").innerHTML= I +' '+ 'mA';  
     }
     else
     {
-        document.getElementById("current").innerHTML= 0;
+        document.getElementById("current").innerHTML= '0 A';
 
     }
 }
