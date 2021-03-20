@@ -50,6 +50,8 @@
           <img id="myImg" src="p-n221.gif" onload="this.onload=null;disable()" width="642px" height="388.2px">
           </div>
           <div class="wrapper1">
+            
+            <center>
             <div id ="intro">
               <br>
               <button class="button button1" id="interval" onclick="timedText();this.disabled = true;">Form P-N Junction</button>
@@ -57,6 +59,7 @@
               <button class="button button1" onClick="history.go(0)">Reload</button><br><br>
               <input id="s1" type="range" min="-5" max="5" step="0.01" value = "0" class="slider" oninput="bnn.value=s1.value;currentval();diodeval();" onchange="fbias(this.value);" /><br>
             </div>
+          </center>
             
             <div id ="intro" class = "theory">
               P-Type Semiconductor - Majority Carriers are holes<br>
