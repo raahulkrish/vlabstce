@@ -12,7 +12,7 @@ h2 {font-size: 18px;line-height: 32px;color:linear-gradient(45deg,#000428,#004e9
 h3 {font-size: 18px;font-weight: bold;margin: 50px 0 20px;color:linear-gradient(45deg,#000428,#004e92);}
 h3::before {content: '💡';padding-right: 5px;}
 
-#intro{ background-color: #ffff;border: 1px solid #d1d5da;border-radius: 3px; padding: 18px;margin: 30px 0;line-height: 22px;}
+#intro{ background-color: #bce4f4;border: 3px solid #535456;border-radius: 20px; padding: 18px;margin: 30px 0;line-height: 22px;}
 #border2{text-align: left; background:linear-gradient(45deg,#212800,#6b9200);border: 3px solid #535456;border-radius: 20px; padding: 18px;margin: 30px 0;line-height: 22px;}
 
 .wrapper {
@@ -33,7 +33,7 @@ h3::before {content: '💡';padding-right: 5px;}
   text-align: justify;
   font-size: 20px;
   line-height: 30px;
-  color: #ffffff;
+  color: #000000;
 
 }
 
@@ -63,6 +63,7 @@ footer {line-height: 50px;background: lightgray;font-size: 12px;padding: 0 50px;
 .topnav {
   overflow: hidden;
   background: linear-gradient(45deg,#000428,#004e92);
+  
 }
 
 .topnav a {
@@ -87,4 +88,23 @@ float: right;
 
 .topnav .icon {
   display: none;
+}
+
+.button {
+  background-color: #004e92; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
