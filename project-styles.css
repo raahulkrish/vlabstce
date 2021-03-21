@@ -12,7 +12,6 @@ h2 {font-size: 18px;line-height: 32px;color:linear-gradient(45deg,#000428,#004e9
 h3 {font-size: 18px;font-weight: bold;margin: 50px 0 20px;color:linear-gradient(45deg,#000428,#004e92);}
 h3::before {content: '💡';padding-right: 5px;}
 
-#intro{ background-color: #bce4f4;border: 3px solid #535456;border-radius: 20px; padding: 18px;margin: 30px 0;line-height: 22px;}
 #border2{text-align: left; background:linear-gradient(45deg,#212800,#6b9200);border: 3px solid #535456;border-radius: 20px; padding: 18px;margin: 30px 0;line-height: 22px;}
 
 .wrapper {
@@ -34,7 +33,10 @@ h3::before {content: '💡';padding-right: 5px;}
   font-size: 20px;
   line-height: 30px;
   color: #000000;
-
+  background-color: #bce4f4;
+  border: 3px solid #535456;
+  border-radius: 20px; 
+  padding: 18px;margin: 30px 0;line-height: 22px;
 }
 
 .book-cover {float: right;width: 100px;}
