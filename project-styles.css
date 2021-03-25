@@ -111,3 +111,116 @@ float: right;
 .button1 {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
+@media only screen and (min-width: 665px)
+{
+  
+  main {margin: 50px 20px;}
+  
+  footer {text-align: center;padding: 0 20px;}
+#mininav{
+  height: 50px;
+  margin-left: 0px;
+  
+ /* background:linear-gradient(90deg,#e6e6fa 60%,whitesmoke 50%);*/
+}
+#mininav a{  
+   padding: 14px 16px;
+  color:#493D26;
+  font-variant:small-caps;
+  font-family:Comic Sans MS;
+  text-decoration:none;
+  text-align:center;
+  display: inline-block;
+  font-size:2.0vw;
+  background-color: #e6e6fa;
+  font-weight: bold;
+  
+  float: left;
+
+
+}
+#mininav a:hover{
+background:linear-gradient(45deg,#3a6186,#89253e);
+border-radius:50px;
+color:white;
+}
+} 
+@media only screen and (min-width: 992px)
+{
+ 
+  main {margin: 50px 20px;}
+  
+  footer {text-align: center;padding: 0 20px;}
+   
+  #mininav
+  {
+  height: 40px;
+  
+  }
+ #mininav a{  
+  padding: 1%;
+  color:#493D26;
+  font-variant:small-caps;
+  font-family:Comic Sans MS;
+  text-decoration:none;
+  text-align:center;
+  display: inline-block;
+  font-size:1.5vw;
+  float:left;
+  background-color: #e6e6fa;
+
+
+}
+#mininav a:hover{
+background:linear-gradient(45deg,#3a6186,#89253e);
+border-radius:50px;
+color:white;
+}
+}
+
+@media only screen and (max-width:665px)
+{
+  main {margin: 50px 20px;}
+  
+  footer {text-align: center;padding: 0 20px;}
+  div h1{
+    height: 70px;
+  }
+  
+#mininav{
+  height: 50px;
+  margin-left: 0px;
+  
+ /* background:linear-gradient(90deg,#e6e6fa 60%,whitesmoke 50%);*/
+}
+#mininav a{  
+   padding: 4px;
+  color:#493D26;
+  font-variant:small-caps;
+  font-family:Comic Sans MS;
+  text-decoration:none;
+  text-align:center;
+  display: inline-block;
+  font-size:2.5vw;
+  background-color: #e6e6fa;
+  font-weight: bold;
+  line-height: 30px;  
+  border-radius: 10px;
+  
+
+
+}
+#mininav a:hover{
+background:linear-gradient(45deg,#3a6186,#89253e);
+border-radius:50px;
+color:white;
+}
+
+}
+#theory{
+  display: none;
+}
+#procedure{
+  display: none;
+}
