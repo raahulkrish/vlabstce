@@ -145,8 +145,7 @@ function currentval()
 
 function Simulation(){
     
-    simulation.style.display="block";
-    
+    simulation.style.display="block";    
     theory.style.display="none";
     procedure.style.display="none";
 
@@ -162,4 +161,15 @@ function Theory(){
     procedure.style.display="none";
     theory.style.display="block";
     simulation.style.display="none";
+}
+function Aim(){
+    aim.style.display="block";
+    simulation.style.display="none";
+    theory.style.display="none";
+}
+function steptwo()
+{
+    step1.style.display="none";
+    step2.style.display="block";
+    
 }

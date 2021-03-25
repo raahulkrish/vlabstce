@@ -29,7 +29,7 @@ h3::before {content: '💡';padding-right: 5px;}
   grid-auto-rows: minmax(100px, auto);
 }
 
-.theory{
+.theorybox{
   text-align: justify;
   font-size: 20px;
   line-height: 30px;
@@ -213,9 +213,6 @@ color:white;
 }
 
 }
-#theory{
-  display: none;
-}
-#procedure{
+#theory, #procedure, #aim, #step2{
   display: none;
 }
