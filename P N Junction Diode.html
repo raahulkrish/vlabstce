@@ -73,7 +73,10 @@
               </div>
               <div id="step2">
               Now the PN Junction diode is formed and the barrier potential is created.
-              Switch ON the power supply by clicking the 'Apply voltage' button given below          
+              Switch ON the power supply by clicking the 'Apply voltage' button given below.        
+              </div>
+              <div id="step3">
+                Gradually increase the supply voltage by varying the voltage slider and note what changes happen.        
               </div>
 
             </center>
@@ -83,7 +86,7 @@
             <div>
               <br>
               <button class="button button1" id="interval" onclick="timedText();this.disabled = true;steptwo()">Form P-N Junction</button>
-              <button class="button button1" onclick="enable();this.disabled= true;">Apply Voltage</button>
+              <button class="button button1" onclick="enable();this.disabled= true;stepthree()">Apply Voltage</button>
               <button class="button button1" onClick="history.go(0)">Reload</button><br><br>
               <center>VOLTAGE SLIDER</center>
               <input id="s1" type="range" min="-5" max="5" step="0.01" value = "0" class="slider" oninput="bnn.value=s1.value;currentval();diodeval();" onchange="fbias(this.value);" /><br>
