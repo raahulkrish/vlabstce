@@ -133,7 +133,7 @@ float: right;
   text-align:center;
   display: inline-block;
   font-size:2.0vw;
-  background-color: #e6e6fa;
+  
   font-weight: bold;
   
   float: left;
@@ -155,7 +155,7 @@ color:white;
    
   #mininav
   {
-  height: 40px;
+  height: 50px;
   
   }
  #mininav a{  
@@ -168,8 +168,6 @@ color:white;
   display: inline-block;
   font-size:1.5vw;
   float:left;
-  background-color: #e6e6fa;
-
 
 }
 #mininav a:hover{
@@ -207,9 +205,6 @@ color:white;
   font-weight: bold;
   line-height: 30px;  
   border-radius: 10px;
-  
-
-
 }
 #mininav a:hover{
 background:linear-gradient(45deg,#3a6186,#89253e);
