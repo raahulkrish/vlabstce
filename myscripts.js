@@ -144,28 +144,30 @@ function currentval()
 }
 
 function Simulation(){
-    
-    simulation.style.display="block";    
+    aim.style.display="none";
+    simulation.style.display="block";
     theory.style.display="none";
     procedure.style.display="none";
 
 
 }
 function Procedure(){
- procedure.style.display="block";
- simulation.style.display="none";
- theory.style.display="none";
-}
-function Theory(){
-    
-    procedure.style.display="none";
-    theory.style.display="block";
+    aim.style.display="none";
     simulation.style.display="none";
+    theory.style.display="none";
+    procedure.style.display="block";
+}
+function Theory(){    
+    aim.style.display="none";
+    simulation.style.display="none";
+    theory.style.display="block";
+    procedure.style.display="none";
 }
 function Aim(){
     aim.style.display="block";
     simulation.style.display="none";
     theory.style.display="none";
+    procedure.style.display="none";
 }
 function steptwo()
 {
