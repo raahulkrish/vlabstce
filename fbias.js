@@ -7,7 +7,9 @@ function fbias(asdf) {
         document.getElementById('myImg').src= "06.gif";
     }
     else if(v >= 0.54 && v <= 0.58 )
-    {
+    {        
+        step3.style.display="none";
+        step4.style.display="block";
         document.getElementById('myImg').src= "fbiasworkloop1.5.gif";
     }
     else if(v > 0.58 && v <= 0.6 )
@@ -43,4 +45,16 @@ function fbias(asdf) {
         document.getElementById('myImg').src= "fbiasworkloop10.gif";
     }
     
+}
+function steptwo()
+{
+    step1.style.display="none";
+    step2.style.display="block";
+    
+}
+function stepthree()
+{
+    step2.style.display="none";
+    step3.style.display="block";
+
 }

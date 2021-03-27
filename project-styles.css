@@ -11,6 +11,7 @@ h1 {font-size: 36px;font-weight: bold;text-transform: uppercase;font-style: ital
 h2 {font-size: 18px;line-height: 32px;color:linear-gradient(45deg,#000428,#004e92);font-style: italic;}
 h3 {font-size: 18px;font-weight: bold;margin: 50px 0 20px;color:linear-gradient(45deg,#000428,#004e92);}
 h3::before {content: '💡';padding-right: 5px;}
+footer{color: white;}
 
 #intro{background-color: #ffff;border: 1px solid #d1d5da;border-radius: 3px; padding: 18px;margin: 30px 0;line-height: 22px; }
 #border2{text-align: left; background:linear-gradient(45deg,#212800,#6b9200);border: 3px solid #535456;border-radius: 20px; padding: 18px;margin: 30px 0;line-height: 22px;}
@@ -52,7 +53,7 @@ table td {border-bottom: 1px solid black;padding: 0 20px;line-height: 40px;}
 strong {font-weight: bold;}
 footer {line-height: 50px;background: lightgray;font-size: 12px;padding: 0 50px;}
 
-.slider {   width: 40%; }
+.slider {   width: 60%; }
 
 @media only screen and (max-width: 750px)
 {
@@ -213,6 +214,6 @@ color:white;
 }
 
 }
-#theory, #procedure, #aim, #step2, #step3, #step4, #step5, #step6, #step7, #step8{
+#theory, #procedure, #aim, #step2, #step3, #step4 {
   display: none;
 }

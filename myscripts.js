@@ -169,15 +169,3 @@ function Aim(){
     theory.style.display="none";
     procedure.style.display="none";
 }
-function steptwo()
-{
-    step1.style.display="none";
-    step2.style.display="block";
-    
-}
-function stepthree()
-{
-    step2.style.display="none";
-    step3.style.display="block";
-
-}
