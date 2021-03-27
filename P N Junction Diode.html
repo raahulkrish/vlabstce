@@ -50,6 +50,7 @@
         <a onclick="Postquiz()"> Postquiz</a>
         <a onclick="Result()"> Result</a>
       </nav>
+      <br><br>
       
       <!-- Experiment Workplace -->
       <div id = "simulation">
@@ -88,7 +89,7 @@
             </div>
             
             <center>
-            <div>
+            <div class="simu_buttons">
               <br>
               <button class="button button1" id="interval" onclick="timedText();this.disabled = true;steptwo()">Form P-N Junction</button>
               <button class="button button1" onclick="enable();this.disabled= true;stepthree()">Apply Voltage</button>
@@ -118,9 +119,80 @@
       </ul>-->
       <div id = "aim">
         <div class="border1" id="border2">
+          
           <div class="wrapper"></div>
         </div>   
       </div>
+
+      <div id="theory">
+  
+        <div class="row">
+          <div class="column" id="column1" >
+                <a href="#Valence Band">Valence Band</a>
+                <a href="#Conduction Band">Conduction Band</a>
+                <a href="#Doping">Doping</a>
+                <a href="#N Type">N Type</a>
+                <a href="#P type">P type</a>
+                <a href="#Diffusion">Diffusion</a>
+                <a href="#Unbiased P-N Junction Diode">Unbiased P-N Junction Diode</a>
+                <a href="#Depletion Region">Depletion Region</a>
+                <a href="#Biased P-N Junction Diode">Biased P-N Junction Diode</a>
+                <a href="#Forward Biased">Forward Biased</a>
+                <a href="#Reverse Biased">Reverse Biased</a>
+                <a href="#I-V Characteristics">I-V Characteristics</a>
+                <a href="#Forward I-V Characteristics">Forward I-V Characteristics</a>
+                <a href="#Reverse I-V Characteristics">Reverse I-V Characteristics</a>
+            </div>
+            <div class="column" id ="column2" >
+              <div class="space" id="Valence Band"><strong>Valence Band</strong>
+                <p>Outer shell of an atom containing the electrons that determine the elements chemical characteristics.</p>
+              </div>
+              <div id="Conduction Band"><strong>Conduction Band</strong>
+                <p>The unoccupied orbitals to which electrons can jump when energised.</p>
+              </div>
+              <div id="Doping"><strong>Doping</strong>
+                        <p>Process of adding small quantities of particular impurities to an intrinsically pure semiconductor in order to alter its conducting properties.</p>
+                </div>
+                <div id= "N Type"><strong>N Type</strong>
+                      <p>Process of adding small quantities of particular impurities to an intrinsically pure semiconductor in order to alter its conducting properties.</p>
+                 </div>
+                       <div id="P type"><strong >P Type</strong>
+                      <p>The p-type material is formed by doping a pure germanium or silicon crystal with impurity atoms having three valence electrons. The elements most frequently used for this purpose are boron, gallium, and indium.</p>
+                </div>
+               <div id="Diffusion"><strong>Diffusion</strong>
+                      <p>The process by which, charge carriers (electrons or holes) in a semiconductor moves from a region of higher concentration to a region of lower concentration is called diffusion.</p>
+                </div>
+                <div id="Unbiased P-N Junction Diode"><strong>Unbiased P-N Junction Diode</strong>
+                      <p>Unbiased conditions mean that there is no external energy source (no voltage) In an unbiased diode an electric field is set up across the depletion layer between the n-type and the p-type material. This is caused by the imbalance in free electrons due to the doping.</p>
+                </div>
+                 <div id="Depletion Region" ><strong>Depletion Region</strong>
+                        <p>Region near the junction of a semiconducting device that has few free carriers because electrons and holes have combined.</p>
+                </div>
+                <div><strong>Biased P-N Junction Diode</strong></div>
+                <div id="Forward Biased"><strong>Forward Biased</strong>
+                     <p>A semiconductor diode is forward-biased when the  voltage applied to a p-n junction (positive to p, negative to n) that diminishes the depletion region and increases the flow of majority carriers.</p>
+                </div>
+                <div id ="Reverse Biased"><strong>Reverse Biased</strong>
+                   <p>A semiconductor diode is forward-biased  oltage applied to a p-n junction (negative to p, positive to n) that enlarges the depletion region and increases the flow of minority carriers.</p>
+                </div>
+                <div id="I-V Characteristics"><strong>I-V Characteristics</strong>
+                  <figure>
+                  <img src="i-v.png" alt="I-V" width="50%" height="50%" style="margin-top: 1%; margin-bottom: 1%;">
+                    </figure>
+                </div>
+                <div id="Forward I-V Characteristics"><strong>Forward I-V Characteristics</strong>
+                      <p>When the diode is forward biased, anode positive with respect to the cathode, a forward or positive current passes through the diode and operates in the top right quadrant of its I-V characteristics curves as shown</p>
+                      <p>When the forward voltage exceeds the diodes P-N junctions internal barrier voltage, which for silicon is about 0.7 volts, avalanche occurs and the forward current increases rapidly for a very small increase in voltage producing a non-linear curve. The “knee” point on the forward curve.</p>
+                </div>
+                <div id="Reverse I-V Characteristics"><strong>Reverse I-V Characteristics</strong>
+                  <p>When the diode is reversed biased, cathode positive with respect to the anode, the diode blocks current except for an extremely small leakage current, and operates in the lower left quadrant of its I-V characteristic curves.</p>
+                  <p>The diode continues to block current flow through it until the reverse voltage across the diode becomes greater than its breakdown voltage point resulting in a sudden increase in reverse current producing a fairly straight line downward curve as the voltage losses control.  </p> 
+                </div>
+  
+            </div>
+        </div>
+  </div>
+
        <div id = "procedure">
         <ol>
         <li>step 1</li>
