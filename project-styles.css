@@ -33,8 +33,21 @@ td > a{color: blue;}
 .simu_buttons{
   height: 150px;;
 }
+
 .theorybox{
   height: 100px;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  background-color: #bce4f4;
+  border: 3px solid #535456;
+  border-radius: 20px; 
+  padding: 18px;margin: 30px 0;line-height: 22px;
+}
+
+.theoryboxaim{
+  height: 200px;
   text-align: justify;
   font-size: 20px;
   line-height: 30px;
@@ -218,7 +231,7 @@ color:white;
 }
 
 }
-#theory, #procedure, #simulation, #step2, #step3, #step4 {
+#theory, #procedure, #simulation, #step2, #step3, #step4,#prequiz {
   display: none;
 }
 
@@ -278,4 +291,34 @@ font-size: 12pt;
 }
 .space{
 margin-top: 1%;
+}
+
+
+.question{
+	font-weight: 600;
+  font-family: Serif;
+  font-size: 20px;
+  padding-top:10px;
+}
+.answers {
+  margin: 20px;
+  padding: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 5px;
+  display:inline-block;
+}
+.answers label{
+  display: block;
+}
+#submit{
+	font-family: sans-serif;
+	font-size: 20px;
+	background: linear-gradient(45deg,#000428,#004e92);color: #ffffff;
+	border: 1px;
+	border-radius: 3px;
+	padding: 20px;
+	cursor: pointer;
+	margin-bottom: 20px;
 }
