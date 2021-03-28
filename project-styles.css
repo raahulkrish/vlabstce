@@ -45,7 +45,7 @@ td > a{color: blue;}
   padding: 18px;margin: 30px 0;line-height: 22px;
 }
 
-.book-cover {float: right;width: 100px;}
+.book-cover {float: right;width: 11%;}
 .youtube {text-align: center;}
 .youtube iframe {max-width: 100%;}
 a {color: gray;text-decoration: none;line-height: 20px;}
