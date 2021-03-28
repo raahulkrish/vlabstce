@@ -218,7 +218,7 @@ color:white;
 }
 
 }
-#theory, #procedure, #simulation, #step2, #step3, #step4 {
+#theory, #procedure, #simulation, #step2, #step3, #step4,#prequiz {
   display: none;
 }
 
@@ -278,4 +278,36 @@ font-size: 12pt;
 }
 .space{
 margin-top: 1%;
+}
+.x{
+  background: linear-gradient(45deg,#000428,#004e92);color: #ffffff;height: 60px;line-height: 60px;padding: 0 50px;
+  font-size:  30px;}
+
+.question{
+	font-weight: 600;
+  font-family: Serif;
+  font-size: 20px;
+  padding-top:10px;
+}
+.answers {
+  margin: 20px;
+  padding: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 5px;
+  display:inline-block;
+}
+.answers label{
+  display: block;
+}
+#submit{
+	font-family: sans-serif;
+	font-size: 20px;
+	background: linear-gradient(45deg,#000428,#004e92);color: #ffffff;
+	border: 1px;
+	border-radius: 3px;
+	padding: 20px;
+	cursor: pointer;
+	margin-bottom: 20px;
 }

@@ -148,6 +148,7 @@ function Simulation(){
     simulation.style.display="block";
     theory.style.display="none";
     procedure.style.display="none";
+    prequiz.style.display="none";
 
 
 }
@@ -156,16 +157,115 @@ function Procedure(){
     simulation.style.display="none";
     theory.style.display="none";
     procedure.style.display="block";
+    prequiz.style.display="none";
 }
 function Theory(){    
     aim.style.display="none";
     simulation.style.display="none";
     theory.style.display="block";
     procedure.style.display="none";
+    prequiz.style.display="none";
 }
 function Aim(){
     aim.style.display="block";
     simulation.style.display="none";
     theory.style.display="none";
     procedure.style.display="none";
+    prequiz.style.display="none";
 }
+function Prequiz(){
+    aim.style.display="none";
+    simulation.style.display="none";
+    theory.style.display="none";
+    procedure.style.display="none";
+    prequiz.style.display="block";
+    function buildQuiz(){
+     
+      const output = [];
+  
+     
+      myQuestions.forEach(
+        (currentQuestion, questionNumber) => {
+  
+          const answers = [];
+
+          for(letter in currentQuestion.answers){
+  
+            answers.push(
+              `<label>
+                <input type="radio" name="question${questionNumber}" value="${letter}">
+                ${letter} :
+                ${currentQuestion.answers[letter]}
+              </label>`
+            );
+          }
+  
+          output.push(
+            `<div class="question"> ${currentQuestion.question} </div>
+            <div class="answers"> ${answers.join('')} </div>`
+          );
+        }
+      );
+  
+      quizContainer.innerHTML = output.join('');
+    }
+  
+    function showResults(){
+  
+      const answerContainers = quizContainer.querySelectorAll('.answers');
+  
+      
+      let numCorrect = 0;
+  
+      myQuestions.forEach( (currentQuestion, questionNumber) => {
+        const answerContainer = answerContainers[questionNumber];
+        const selector = `input[name=question${questionNumber}]:checked`;
+        const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+  
+        if(userAnswer === currentQuestion.correctAnswer){
+          numCorrect++;
+          answerContainers[questionNumber].style.color = 'green';
+        }
+        else{
+          answerContainers[questionNumber].style.color = 'red';
+        }
+      });
+      resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    }
+  
+    const quizContainer = document.getElementById('quiz');
+    const resultsContainer = document.getElementById('results');
+    const submitButton = document.getElementById('submit');
+    const myQuestions = [
+      {
+        question: "1.Who invented JavaScript?",
+        answers: {
+          a: "Brendan Eich",
+          b: "Sheryl Sandberg",
+          c: "Douglas Crockford"
+        },
+        correctAnswer: "a"
+      },
+      {
+        question: "2.Which one of these is a JavaScript package manager?",
+        answers: {
+          a: "Node.js",
+          b: "TypeScript",
+          c: "npm"
+        },
+        correctAnswer: "c"
+      },
+      {
+        question: "3.Which tool can you use to ensure code quality?",
+        answers: {
+          a: "Angular",
+          b: "jQuery",
+          c: "RequireJS",
+          d: "ESLint"
+        },
+        correctAnswer: "d"
+      }
+    ];
+    buildQuiz();
+    submitButton.addEventListener('click', showResults);
+  }
