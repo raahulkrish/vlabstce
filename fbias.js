@@ -10,37 +10,57 @@ function fbias(asdf) {
     {        
         step3.style.display="none";
         step4.style.display="block";
-        document.getElementById('myImg').src= "fbiasworkloop1.5.gif";
+        document.getElementById('myImg').src= "fbiasworkloop1.gif";
     }
     else if(v > 0.58 && v <= 0.6 )
     {
-        document.getElementById('myImg').src= "fbiasworkloop2.5.gif";
+        document.getElementById('myImg').src= "fbiasworkloop1.5.gif";
     }
     else if(v > 0.6 && v <= 0.65 )
     {
-        document.getElementById('myImg').src= "fbiasworkloop3.5.gif";
+        document.getElementById('myImg').src= "fbiasworkloop2.gif";
     }
     else if(v > 0.65 && v <= 0.7 )
     {
-        document.getElementById('myImg').src= "fbiasworkloop4.5.gif";
+        document.getElementById('myImg').src= "fbiasworkloop2.5.gif";
     }
     else if(v > 0.7 && v <= 0.72 )
     {
-        document.getElementById('myImg').src= "fbiasworkloop6.gif";
+        document.getElementById('myImg').src= "fbiasworkloop3.gif";
     }
     else if(v > 0.72 && v <= 0.74 )
     {
-        document.getElementById('myImg').src= "fbiasworkloop7.gif";
+        document.getElementById('myImg').src= "fbiasworkloop3.5.gif";
     }
     else if(v > 0.74 && v <= 0.76 )
     {
-        document.getElementById('myImg').src= "fbiasworkloop8.gif";
+        document.getElementById('myImg').src= "fbiasworkloop4.gif";
     }
     else if(v > 76 && v <= 0.77 )
     {
-        document.getElementById('myImg').src= "fbiasworkloop9.gif";
+        document.getElementById('myImg').src= "fbiasworkloop4.5.gif";
     }
     else if(v > 0.77 && v <= 2 )
+    {
+        document.getElementById('myImg').src= "fbiasworkloop5.gif";
+    }
+    else if(v > 2 && v <= 2.5 )
+    {
+        document.getElementById('myImg').src= "fbiasworkloop6.gif";
+    }
+    else if(v > 2.5 && v <= 3)
+    {
+        document.getElementById('myImg').src= "fbiasworkloop7.gif";
+    }
+    else if(v > 3 && v <= 3.5 )
+    {
+        document.getElementById('myImg').src= "fbiasworkloop8.gif";
+    }
+    else if(v > 3.5 && v <= 4 )
+    {
+        document.getElementById('myImg').src= "fbiasworkloop9.gif";
+    }
+    else if(v > 4 && v <= 5 )
     {
         document.getElementById('myImg').src= "fbiasworkloop10.gif";
     }
