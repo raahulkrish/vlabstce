@@ -33,8 +33,21 @@ td > a{color: blue;}
 .simu_buttons{
   height: 150px;;
 }
+
 .theorybox{
   height: 100px;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  background-color: #bce4f4;
+  border: 3px solid #535456;
+  border-radius: 20px; 
+  padding: 18px;margin: 30px 0;line-height: 22px;
+}
+
+.theoryboxaim{
+  height: 200px;
   text-align: justify;
   font-size: 20px;
   line-height: 30px;
@@ -279,9 +292,7 @@ font-size: 12pt;
 .space{
 margin-top: 1%;
 }
-.x{
-  background: linear-gradient(45deg,#000428,#004e92);color: #ffffff;height: 60px;line-height: 60px;padding: 0 50px;
-  font-size:  30px;}
+
 
 .question{
 	font-weight: 600;

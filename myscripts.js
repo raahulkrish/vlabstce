@@ -238,32 +238,32 @@ function Prequiz(){
     const submitButton = document.getElementById('submit');
     const myQuestions = [
       {
-        question: "1.Who invented JavaScript?",
+        question: "1. What is the Forbidden Energy Gap for Conductors ?",
         answers: {
-          a: "Brendan Eich",
-          b: "Sheryl Sandberg",
-          c: "Douglas Crockford"
+          a: "Zero",
+          b: "Large",
+          c: "Small"
         },
         correctAnswer: "a"
       },
       {
-        question: "2.Which one of these is a JavaScript package manager?",
+        question: "2. Conduction of a semicondutor device can be increased by ?",
         answers: {
-          a: "Node.js",
-          b: "TypeScript",
-          c: "npm"
+          a: "reverse biasing",
+          b: "forward biasing",
+          c: "doping"
         },
         correctAnswer: "c"
       },
       {
-        question: "3.Which tool can you use to ensure code quality?",
+        question: "3. Pick the odd one out.",
         answers: {
-          a: "Angular",
-          b: "jQuery",
-          c: "RequireJS",
-          d: "ESLint"
+          a: "Majority carriers are electrons",
+          b: "Minority carriers are holes",
+          c: "Dopants are from group III",
+          d: "Dopants are from group V"
         },
-        correctAnswer: "d"
+        correctAnswer: "c"
       }
     ];
     buildQuiz();

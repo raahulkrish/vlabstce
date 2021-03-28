@@ -118,75 +118,127 @@
       <ul>
         <li><a href="https://www.tce.edu/">Official Website</a></li>
       </ul>-->
-      <div id = "aim" class="theorybox">
-          
+      <div id = "aim" class="theoryboxaim">
+          1. To read the theory atleast 2 times.<br><br>
+          2. To follow the procedure to run the simulation.<br><br>
+          3. To observe each and every step in simulation and correlate with the theory.<br><br>
+          4. To plot the V-I Characteristics of PN junction diode under forward bias.<br><br>
+          5. To find the cut-in voltage and static resistance for forward bias.
       </div>
 
       <div id="theory">
   
         <div class="row">
           <div class="column" id="column1" >
+                <a href="#Atom">Atomic Structure</a>
+                <a href="#Shell">Orbits / Shells</a>
+                <a href="#Valence Shell">Valence Shell</a>
+                <a href="#Covalent Bond">Covalent Bond</a>
                 <a href="#Valence Band">Valence Band</a>
                 <a href="#Conduction Band">Conduction Band</a>
+                <a href="#FEG">Forbidden Energy Gap</a>
                 <a href="#Doping">Doping</a>
                 <a href="#N Type">N Type</a>
                 <a href="#P type">P type</a>
                 <a href="#Diffusion">Diffusion</a>
                 <a href="#Unbiased P-N Junction Diode">Unbiased P-N Junction Diode</a>
                 <a href="#Depletion Region">Depletion Region</a>
-                <a href="#Biased P-N Junction Diode">Biased P-N Junction Diode</a>
-                <a href="#Forward Biased">Forward Biased</a>
-                <a href="#Reverse Biased">Reverse Biased</a>
-                <a href="#I-V Characteristics">I-V Characteristics</a>
-                <a href="#Forward I-V Characteristics">Forward I-V Characteristics</a>
-                <a href="#Reverse I-V Characteristics">Reverse I-V Characteristics</a>
+                <a href="#Forward Biased">Forward Biased</a>                
             </div>
             <div class="column" id ="column2" >
-              <div class="space" id="Valence Band"><strong>Valence Band</strong>
-                <p>Outer shell of an atom containing the electrons that determine the elements chemical characteristics.</p>
+              <div class="space"  id="Atom"><strong>Atomic Structure</strong>
+                <p>Imagine a tiny particle called an atom (Family) contains three types (Children) of charge carriers and a nucleus (Parent).
+                  <br><br>The three types are Protons, neutrons and electrons.<br><br>Protons and neutrons are present inside the nucleus at the centre of an atom.
+                  <br><br>Electrons revolve around the nucleus in shells in an energy level pattern.
+                </p>
+              </div>
+              <div id="Shell"><strong>Orbits / Shells</strong>
+                <p>A shell can contain a maximum of 2n² electrons where n is the number of the shell.<br><br>
+                Each shell has an energy level that creates a force of attraction towards the nucleus.<br><br>
+                The shell nearer to nucleus has more force of attraction (less energy) towards nucleus.<br><br>And 
+                the shell far away from nucleus has less force of attraction (more energy) towards nucleus.<br><br> 
+                </p>
+              </div>
+              <div id="Valence Shell"><strong>Valence Shell</strong>
+                <p>The outermost shell of an atom is called the Valence shell.<br><br>
+                  The electrons in this shell are called valence electrons.<br><br>
+                  They need only small amount of energy to release the electrons from the valence shell.<br><br>
+                  The electrons which are released from the valence shell are free electrons. 
+                </p>
+              </div>
+              <div id="Covalent Bond"><strong>Covalent Bond</strong>
+                <p>Ge and Si have four electrons in their valence shell.<br><br>
+                  So far we discussed for a single atom and WKT combination of atoms makes a molecule.<br><br>
+                The combination is nothing but sharing of valence electrons of one atom with the adjacent atom.<br><br>
+                This merging of valence electrons are called covalent bonds.<br><br>
+                This merging forms an energy band.
+                </p>
+              </div>
+              <div id="Valence Band"><strong>Valence Band</strong>
+                <p>The energy band formed due to the merging of valence electrons is called Valence Band.</p>
               </div>
               <div id="Conduction Band"><strong>Conduction Band</strong>
-                <p>The unoccupied orbitals to which electrons can jump when energised.</p>
+                <p>The energy band formed due to the merging of free electrons is called Conduction Band.</p>
+              </div>
+              <div id="FEG"><strong>Forbidden Energy Gap</strong>
+                <p>When jumping from valence band to conduction band, electrons have to cross an energy gap.<br><br>
+                This energy gap is called Forbidden Energy Gap.<br><br>
+                <strong>FEG: </strong>Insulators > Semi-Conductors<br><br>
+                While jumping to conduction band, the current generated is called drift current.  
+                </p>
               </div>
               <div id="Doping"><strong>Doping</strong>
-                        <p>Process of adding small quantities of particular impurities to an intrinsically pure semiconductor in order to alter its conducting properties.</p>
+                        <p>Free electrons are responsible for conduction.<br><br>
+                          Ge and Si have four electrons in their valence shell.<br><br>
+                          To generate more free electrons without rising temperature, we add Group V impurities.<br><br>
+                          Why Group V ?<br><br>
+                          Because they have 5 electrons in their valence shell.<br><br>
+                          While forming covalent bond, they leave the 5th electron in the valence band\.<br><br>
+                          In the same fashion, we can create holes by adding Group III impurities.<br><br>
+                          Because they have only three valence electrons, leaving the 4th place as a hole in the covalent bond. 
+                        </p>
                 </div>
                 <div id= "N Type"><strong>N Type</strong>
-                      <p>Process of adding small quantities of particular impurities to an intrinsically pure semiconductor in order to alter its conducting properties.</p>
+                      <p>The semiconductor material in which there are more number of free electrons and few holes are called n type semiconductor.<br><br>
+                      Majority charge carriers - free electrons<br><br>
+                      Minority charge carriers - holes
+                      </p>
                  </div>
                        <div id="P type"><strong >P Type</strong>
-                      <p>The p-type material is formed by doping a pure germanium or silicon crystal with impurity atoms having three valence electrons. The elements most frequently used for this purpose are boron, gallium, and indium.</p>
+                      <p>The semiconductor material in which there are more number of holes and few free electrons are called p type semiconductor.<br><br>
+                        Majority charge carriers - holes<br><br>
+                        Minority charge carriers - free electrons</p>
                 </div>
                <div id="Diffusion"><strong>Diffusion</strong>
-                      <p>The process by which, charge carriers (electrons or holes) in a semiconductor moves from a region of higher concentration to a region of lower concentration is called diffusion.</p>
+                      <p>Due to non-uniform doping concentration of charged particles,<br><br>
+                      there will be movement of both electrons in n type as well as holes in p type<br><br>
+                      from high concentration towards lower concentration until uniform concentration is attained.<br><br>
+                    This movement of charge carriers in a semiconductor is called diffusion.<br><br>
+                    </p>
                 </div>
                 <div id="Unbiased P-N Junction Diode"><strong>Unbiased P-N Junction Diode</strong>
-                      <p>Unbiased conditions mean that there is no external energy source (no voltage) In an unbiased diode an electric field is set up across the depletion layer between the n-type and the p-type material. This is caused by the imbalance in free electrons due to the doping.</p>
+                      <p>While p and n type are flavoured together, a junction exists between them.<br><br>
+                      One side of the junction, there are high concentration of electrons.<br><br>
+                      Another side of the junction, there are high concentration of holes.<br><br>
+                      This created concentration gradient and thus diffusion starts.
+                      </p>
                 </div>
                  <div id="Depletion Region" ><strong>Depletion Region</strong>
-                        <p>Region near the junction of a semiconducting device that has few free carriers because electrons and holes have combined.</p>
-                </div>
-                <div><strong>Biased P-N Junction Diode</strong></div>
+                        <p>While diffusion occurs, electrons from n region enter into p region and recombine with acceptor atoms which are holes.<br><br>
+                        Similarly, holes from p region enter into n region and recombine with donor atoms which are electrons.<br><br>
+                        This recombination of electrons and holes creates <strong>:</strong><br><br>Immobile positive ions on n region and immobile negative ions on p region.<br><br>
+                        These immobile charges acuumulated near the junction is called depletion region / barrier of a diode.<br><br>
+                        After the barrier is formed, the movement of electrons / holes across the junction will be stopped. 
+                        </p>
+                </div>              
                 <div id="Forward Biased"><strong>Forward Biased</strong>
-                     <p>A semiconductor diode is forward-biased when the  voltage applied to a p-n junction (positive to p, negative to n) that diminishes the depletion region and increases the flow of majority carriers.</p>
-                </div>
-                <div id ="Reverse Biased"><strong>Reverse Biased</strong>
-                   <p>A semiconductor diode is forward-biased  oltage applied to a p-n junction (negative to p, positive to n) that enlarges the depletion region and increases the flow of minority carriers.</p>
-                </div>
-                <div id="I-V Characteristics"><strong>I-V Characteristics</strong>
-                  <figure>
-                  <img src="i-v.png" alt="I-V" width="50%" height="50%" style="margin-top: 1%; margin-bottom: 1%;">
-                    </figure>
-                </div>
-                <div id="Forward I-V Characteristics"><strong>Forward I-V Characteristics</strong>
-                      <p>When the diode is forward biased, anode positive with respect to the cathode, a forward or positive current passes through the diode and operates in the top right quadrant of its I-V characteristics curves as shown</p>
-                      <p>When the forward voltage exceeds the diodes P-N junctions internal barrier voltage, which for silicon is about 0.7 volts, avalanche occurs and the forward current increases rapidly for a very small increase in voltage producing a non-linear curve. The “knee” point on the forward curve.</p>
-                </div>
-                <div id="Reverse I-V Characteristics"><strong>Reverse I-V Characteristics</strong>
-                  <p>When the diode is reversed biased, cathode positive with respect to the anode, the diode blocks current except for an extremely small leakage current, and operates in the lower left quadrant of its I-V characteristic curves.</p>
-                  <p>The diode continues to block current flow through it until the reverse voltage across the diode becomes greater than its breakdown voltage point resulting in a sudden increase in reverse current producing a fairly straight line downward curve as the voltage losses control.  </p> 
-                </div>
-  
+                     <p>When the p-region is tied up to a higher potential and the n-region to a lower potential<br><br>
+                    the biasing condition is forward biased.<br><br>
+                    The barrier has a voltage level, more likely it act as an electric field.<br><br>
+                    When we give voltage above the barrier potential, the flow of charge carriers across the junction is restarted.<br><br>
+                    Thus the diode is in forward conduction mode.
+                    </p>
+                </div>    
             </div>
         </div>
   </div>
@@ -199,12 +251,11 @@
       </ol>
        </div>
        <div id = 'prequiz'>
-       <div class="x">
-        <strong>Pre Quiz</strong>
-      </div>
+       
       <div id="quiz"></div>
+      <div id="results"></div><br><br>
       <button id="submit">Submit Quiz</button>
-      <div id="results"></div>
+      
       </div>
     </main>
 
