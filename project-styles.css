@@ -286,6 +286,7 @@ position:relative;
 width: 72%;
 overflow-x: hidden;
 overflow-y: scroll;
+scroll-behavior: smooth;
 max-height:70.5vh;
 }
 
