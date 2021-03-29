@@ -82,24 +82,28 @@
               <div id="step4">
                 Now the Applied voltage is greater than the cut-in voltage of the diode and it starts conducting. 
                 Now further increase the supply voltage, the current will increase exponentially.  
+              </div>
+              <div id="step5">
+                hiiii sivaa
 
               </div>
-
             </center>
             </div>
             
             <center>
             <div class="simu_buttons">
               <br>
-              <button class="button button1" id="interval" onclick="timedText();this.disabled = true;steptwo()">Form P-N Junction</button>
-              <button class="button button1" onclick="enable();this.disabled= true;stepthree()">Apply Voltage</button>
+              <button class="button button1" id="interval" onclick="timedText();enable2();this.disabled = true;steptwo()">Form P-N Junction</button>
+              <button class="button button1" id="interval1" onclick="enable1();timedText1();this.disabled = true;stepthree()">Diffusion</button>
+              
+              <button class="button button1" id="interval2" onclick="enable();this.disabled= true;stepfour()">Apply Voltage</button>
               <button class="button button1" onClick="history.go(0)">Reload</button><br><br>
               <strong><center>VOLTAGE SLIDER</center></strong>
               <input id="s1" type="range" min="0" max="5" step="0.01" value = "0" class="slider" oninput="bnn.value=s1.value;currentval();diodeval();" onchange="fbias(this.value);" /><br>
             </div>  
           </center>
         
-            <div class="theorybox">
+            <div class="theorybox1">
               <center>METER READINGS</center>
               Battery Voltage = <output id="bnn" name="Voltage" for="s1">0</output><br>
               Voltage across the Diode = <output id="diode" >0 V</output> <br>

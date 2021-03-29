@@ -34,6 +34,7 @@ footer{ font-weight: bold;}
 .simu_buttons{
   height: 150px;
   color: white;
+  margin-bottom: 50px;
 }
 
 .theorybox{
@@ -48,6 +49,17 @@ footer{ font-weight: bold;}
   padding: 18px;margin: 30px 0;line-height: 22px;
 }
 
+.theorybox1{
+  height: 100px;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  background-color: #bce4f4;
+  border: 3px solid #535456;
+  border-radius: 20px; 
+  padding: 18px;margin: 30px 0;line-height: 22px;
+}
 .theoryboxaim{
   height: 200px;
   text-align: justify;
@@ -233,7 +245,7 @@ color:white;
 }
 
 }
-#theory, #procedure, #simulation, #step2, #step3, #step4,#prequiz {
+#theory, #procedure, #simulation, #step2, #step3, #step4,#step5,#prequiz {
   display: none;
 }
 

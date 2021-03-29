@@ -4,6 +4,15 @@ function disable() {
     document.getElementById("s1").disabled = true;
     }
 
+function enable2(){
+  document.getElementById("interval1").disabled = false;
+}    
+function enable1(){
+  if(check==1)
+  document.getElementById("interval2").disabled = false;
+  else
+  alert("Form P-N Junction first");
+}    
 function enable() {
     if (check==1)
     {
@@ -21,11 +30,14 @@ function enable() {
 function timedText() {
     setTimeout(myTimeout0, 900)
     setTimeout(myTimeout1, 1000) 
-    setTimeout(myTimeout2, 1030) 
-   setTimeout(myTimeout3, 1070)
-   setTimeout(myTimeout4, 6070)
-   
+    setTimeout(myTimeout2, 1030)
+    setTimeout(myTimeout3, 1070) 
     }
+ 
+function timedText1(){
+  setTimeout(myTimeout4, 1000)
+  setTimeout(myTimeout5, 6000)
+ }   
     
 function myTimeout00() {
     document.getElementById('myImg').src = "1.gif";
@@ -48,11 +60,15 @@ function myTimeout2() {
     document.getElementById('myImg').src = "jnformation112.gif";
     }
 function myTimeout3() {
+    document.getElementById('myImg').src = "Snapshot_6.gif";
+    check=1;
+    }    
+function myTimeout4() {
     document.getElementById('myImg').src = "depletion_layer1112.gif";
     }
-function myTimeout4() {
+function myTimeout5() {
     document.getElementById('myImg').src = "Snapshot_1.gif";
-    check=1;
+    
 }
 
 function diodeval()
