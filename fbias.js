@@ -42,6 +42,8 @@ function fbias(asdf) {
     }
     else if(v > 0.77 && v <= 2 )
     {
+        step5.style.display="none";
+        step6.style.display="block";
         document.getElementById('myImg').src= "fbiasworkloop5.gif";
     }
     else if(v > 2 && v <= 2.5 )
@@ -62,6 +64,8 @@ function fbias(asdf) {
     }
     else if(v > 4 && v <= 5 )
     {
+        step6.style.display="none";
+        step7.style.display="block";
         document.getElementById('myImg').src= "fbiasworkloop10.gif";
     }
     
