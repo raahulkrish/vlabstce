@@ -14,7 +14,7 @@
 
   <body>
 
-    <!-- Navigation menu -->
+  <!-- Navigation menu -->
     <div class="topnav" id="myTopnav">
       <div class="myc">
         <ul>
@@ -39,7 +39,7 @@
       <!-- Logo of VLabs -->
       <img src="vlabstcelogo.png" alt="VlabsTCE" class="book-cover">
 
-      <!-- Name of the Experiment -->
+      <!-- Navigation Bar -->
       <h1>Forward Bias Characteristics of P-N Junction Diode</h1><br><br>
       <nav id="mininav">
         <a onclick="Aim()">Aim</a>
@@ -53,10 +53,8 @@
       </nav>
       <br><br><br>
       
-      <!-- Experiment Workplace -->
+      <!-- Simulation Workplace -->
       <div id = "simulation">
-
-      <!-- Experiment Workplace -->
       <div class="border1" id="border2">
         <div class="wrapper">
           
@@ -95,7 +93,7 @@
               <button class="button button1" id="interval" onclick="timedText();this.disabled = true;steptwo()">Form P-N Junction</button>
               <button class="button button1" onclick="enable();this.disabled= true;stepthree()">Apply Voltage</button>
               <button class="button button1" onClick="history.go(0)">Reload</button><br><br>
-              <center>VOLTAGE SLIDER</center>
+              <strong><center>VOLTAGE SLIDER</center></strong>
               <input id="s1" type="range" min="0" max="5" step="0.01" value = "0" class="slider" oninput="bnn.value=s1.value;currentval();diodeval();" onchange="fbias(this.value);" /><br>
             </div>  
           </center>
@@ -111,13 +109,8 @@
      </div>
      </div>
      </div>
-      
-      <!-- List of some resources to learn more about TCE 
-      <h3>More information</h3>
 
-      <ul>
-        <li><a href="https://www.tce.edu/">Official Website</a></li>
-      </ul>-->
+  <!-- Aim Workplace -->
       <div id = "aim" class="theoryboxaim">
           1. To read the theory atleast 2 times.<br><br>
           2. To follow the procedure to run the simulation.<br><br>
@@ -126,7 +119,8 @@
           5. To find the cut-in voltage and static resistance for forward bias.
       </div>
 
-      <div id="theory">
+  <!-- Theory Workplace -->
+  <div id="theory">
   
         <div class="row">
           <div class="column" id="column1" >
@@ -242,6 +236,8 @@
             </div>
         </div>
   </div>
+  
+  <!-- Procedure Workplace -->
 
        <div id = "procedure" class="theoryboxaim">
           <div >            
@@ -266,6 +262,8 @@
               Now further increase the supply voltage, the current will increase exponentially. Plot the noted readings as a graph.  
           </div>
        </div>
+  
+<!-- Prequiz Workplace -->
        <div id = 'prequiz'>
        
       <div id="quiz"></div>
