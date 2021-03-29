@@ -165,6 +165,7 @@ function Simulation(){
     theory.style.display="none";
     procedure.style.display="none";
     prequiz.style.display="none";
+    feedbaack.style.display="none";
 
 
 }
@@ -174,6 +175,8 @@ function Procedure(){
     theory.style.display="none";
     procedure.style.display="block";
     prequiz.style.display="none";
+    feedbaack.style.display="none";
+
 }
 function Theory(){    
     aim.style.display="none";
@@ -181,6 +184,8 @@ function Theory(){
     theory.style.display="block";
     procedure.style.display="none";
     prequiz.style.display="none";
+    feedbaack.style.display="none";
+
 }
 function Aim(){
     aim.style.display="block";
@@ -188,9 +193,21 @@ function Aim(){
     theory.style.display="none";
     procedure.style.display="none";
     prequiz.style.display="none";
+    feedbaack.style.display="none";
+
+}
+function Feedbaack(){
+  aim.style.display="none";
+  simulation.style.display="none";
+  theory.style.display="none";
+  procedure.style.display="none";
+  prequiz.style.display="none";
+  feedbaack.style.display="block";
+  
 }
 function Prequiz(){
     aim.style.display="none";
+    feedbaack.style.display="none";
     simulation.style.display="none";
     theory.style.display="none";
     procedure.style.display="none";
