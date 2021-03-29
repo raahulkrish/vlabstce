@@ -13,7 +13,7 @@ h3 {font-size: 18px;font-weight: bold;margin: 50px 0 20px;color:linear-gradient(
 h3::before {content: '💡';padding-right: 5px;}
 footer{color: white;}
 td > a{color: blue;}
-#intro{background-color: #ffff;border: 1px solid #d1d5da;border-radius: 3px; padding: 18px;margin: 30px 0;line-height: 22px; }
+#intro{background-color: #ffff;border: 3px solid #004e92;border-radius: 20px; padding: 18px;margin: 30px 0;line-height: 22px; width: 85%; }
 #border2{text-align: left; background:linear-gradient(45deg,#212800,#6b9200);border: 3px solid #535456;border-radius: 20px; padding: 18px;margin: 0px 0;line-height: 22px;}
 
 footer{ font-weight: bold;}
