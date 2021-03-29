@@ -67,7 +67,7 @@ footer{ font-weight: bold;}
   background-color: #bce4f4;
   border: 3px solid #535456;
   border-radius: 20px; 
-  padding: 18px;margin: 30px 0;line-height: 22px;
+  padding: 2%;margin: 10px 0px 200px 0px;
 }
 
 .book-cover {float: right;width: 11%;}
@@ -262,6 +262,11 @@ color:white;
       color:#000428;
       font-weight: bold;
       font-size: 12pt;}
+      
+.space{
+  font-size: 12pt;
+}      
+
 #column1{
 display:inline-block;
 width:22%;
@@ -270,6 +275,7 @@ margin-right: 1%;
 margin-left: 1%;
 
 }
+
 #column2{
 margin: 0% 1% 1% 1%;
 background:whitesmoke;
@@ -281,9 +287,8 @@ width: 72%;
 overflow-x: hidden;
 overflow-y: scroll;
 max-height:70.5vh;
-
-
 }
+
 .row:after {
 content: "";
 display: table;
