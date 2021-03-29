@@ -7,12 +7,6 @@ function disable() {
 function enable2(){
   document.getElementById("interval1").disabled = false;
 }    
-function enable1(){
-  if(check==1)
-  document.getElementById("interval2").disabled = false;
-  else
-  alert("Form P-N Junction first");
-}    
 function enable() {
     if (check==1)
     {
@@ -302,3 +296,9 @@ function Prequiz(){
     buildQuiz();
     submitButton.addEventListener('click', showResults);
   }
+  window.onload=function() {
+    document.getElementById("interval1").disabled=true;
+    document.getElementById("interval2").disabled=true;
+
+  }
+
