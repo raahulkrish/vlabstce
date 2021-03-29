@@ -38,7 +38,6 @@ footer{ font-weight: bold;}
 }
 
 .theorybox{
-  height: 100px;
   text-align: justify;
   font-size: 20px;
   line-height: 30px;
@@ -61,7 +60,6 @@ footer{ font-weight: bold;}
   padding: 18px;margin: 30px 0;line-height: 22px;
 }
 .theoryboxaim{
-  height: 200px;
   text-align: justify;
   font-size: 20px;
   line-height: 30px;
