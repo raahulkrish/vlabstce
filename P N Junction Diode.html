@@ -16,54 +16,59 @@
   <body>
 
   <!-- Navigation menu -->
-    <div class="topnav" id="myTopnav">
-      <div class="myc">
-        <ul>
-          <li><img src="Thiagarajar_College_of_Engineering_logo.png" alt="TCE Logo"></li>  
-          <li><strong>Thiagarajar College of Engineering</strong></li>
+  <div class="topnav" id="myTopnav">
+    <div class="myc">
+      <ul>
+        <li><img src="Thiagarajar_College_of_Engineering_logo.png" alt="TCE Logo"></li>  
+        <li><strong>Thiagarajar College of Engineering</strong></li>
         
-          <a href="#contact">Help</a>
-          <a  href="https://www.tce.edu/">About</a>
-          <a href="#contact">Contact</a>
-          
-          <a href="#contact">Login</a>
-          <a href="main.html" class="active">Home</a>
+        <a href="#contact">Help</a>
+        <a  href="https://www.tce.edu/">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact">Login</a>
+        <a href="main.html" class="active">Home</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i> </a>
-    </ul>
+        <i class="fa fa-bars"></i> </a>
+      </ul>
       
-      </div>
-     </div>
+    </div>
+  </div>
     
-    <main>
+  <main>
 
-      <!-- Logo of VLabs -->
-      <img src="vlabstcelogo.png" alt="VlabsTCE" class="book-cover">
+    <!-- Logo of VLabs -->
+    <img src="vlabstcelogo.png" alt="VlabsTCE" class="book-cover">
 
-      <!-- Navigation Bar -->
-      <h1>Forward Bias Characteristics of P-N Junction Diode</h1><br><br>
-      <nav id="mininav">
-        <a onclick="Aim()">Aim</a>
-        <a onclick="Theory()"> Theory</a>
-        <a onclick="Prequiz()"> Prequiz</a>
-        <a onclick="Procedure()"> Procedure</a>
-        <a onclick="Simulation()"> Simulation</a>
-        <a onclick="Outcome()"> Outcome</a>
-        <a onclick="Feedbaack()">Feedback</a>
-      </nav>
-      <br><br><br>
+    <!-- Navigation Bar -->
+    <h1>Forward Bias Characteristics of P-N Junction Diode</h1><br><br>
+    <nav id="mininav">
+      <a onclick="Aim()">Aim</a>
+      <a onclick="Theory()"> Theory</a>
+      <a onclick="Prequiz()"> Prequiz</a>
+      <a onclick="Procedure()"> Procedure</a>
+      <a onclick="Simulation()"> Simulation</a>
+      <a onclick="Outcome()"> Outcome</a>
+      <a onclick="Feedbaack()">Feedback</a>
+    </nav>
+    <br><br><br>
       
-      <!-- Simulation Workplace -->
-      <div id = "simulation">
+    <!-- Simulation Workplace -->
+    <div id = "simulation">
       <div class="border1" id="border2">
         <div class="wrapper">
-          
-          <div>
-            <br><br><br>
-          <img id="myImg" src="p-n221.gif" onload="this.onload=null;disable()" width="642px" height="388.2px">
+          <div  class="wrapper2">
+            <div class="theorybox1">
+              <center>METER READINGS</center>
+                Battery Voltage = <output id="bnn" name="Voltage" for="s1">0</output><br>
+                Voltage across the Diode = <output id="diode" >0 V</output> <br>
+                Current Value = <output id="current">0 A</output>
+            </div>
+
+            <div>
+              <img id="myImg" src="p-n221.gif" onload="this.onload=null;disable()" width="642px" height="388.2px">
+            </div>
           </div>
           <div class="wrapper1">
-
             <div class ="theorybox">
               <center>
               <div id="step1" >                
@@ -102,32 +107,26 @@
               </div>
             </center>
             </div>
-            
             <center>
             <div class="simu_buttons">
               <br>
               <button class="button button1" id="interval" onclick="timedText();enable2();this.disabled = true;steptwo();interval1.disabled =false">Form P-N Junction</button>
               <button class="button button1" id="interval1" onclick="timedText1();this.disabled = true;stepthree();interval2.disabled = false">Diffusion</button>
-              
               <button class="button button1" id="interval2" onclick="enable();this.disabled= true;stepfour()">Apply Voltage</button>
               <button class="button button1" onClick="history.go(0)">Reset</button><br><br>
               <strong><center>VOLTAGE SLIDER</center></strong>
-              <input id="s1" type="range" min="0" max="5" step="0.01" value = "0" class="slider" oninput="bnn.value=s1.value;currentval();diodeval();" onchange="fbias(this.value);" /><br>
+              <input id="s1" type="range" min="0" max="5" step="0.01" value = "0" class="slider" oninput="bnn.value=s1.value;bnn2.value=s1.value;currentval();diodeval();fbias(this.value);" onchange="fbias(this.value);" /><br>
+              <output id="bnn2" name="Voltage" for="s1">0</output>
             </div>  
           </center>
-        
-            <div class="theorybox1">
-              <center>METER READINGS</center>
-              Battery Voltage = <output id="bnn" name="Voltage" for="s1">0</output><br>
-              Voltage across the Diode = <output id="diode" >0 V</output> <br>
-              Current Value = <output id="current">0 A</output>
-            </div>
-          </div>  
+          <div>
+            
+        </div>
+      </div>
+    </div>  
 
-     </div>
-     </div>
-     </div>
-
+  </div>
+  </div>
   <!-- Aim Workplace -->
       <div id = "aim" class="theoryboxaim">
           1. To plot the V-I Characteristics of PN junction diode under forward bias condition.<br><br>
@@ -285,7 +284,7 @@
                 <li>Thus the diode is in forward conduction mode.</li>
               </p>
               </div>
-                  
+                                
             </div>
         </div>
   </div>
@@ -314,9 +313,22 @@
       <div id = "prequiz">
         <div id="quiz"></div>
           <div id="results"></div><br><br>
-        <button id="submit">Submit Quiz</button>
+            <button id="submit">Submit Quiz</button>
       </div>
-
+<!-- Outcome Workplace -->
+      <div id = "outcome" class="theoryboxaim">
+        At the end of the experiment, a student will able to explain : <br><br>
+        <li>What is doping ?</li>
+        <li>What is an n-type semiconductor ?</li>
+        <li>What is a p-type semiconductor ?</li>
+        <li>What is diffusion process ?</li>
+        <li>What is mobility of electrons ?</li>
+        <li>What is a depletion region ?</li>
+        <li>What is barrier potential ?</li>
+        <li>When and why the flow of charge carriers restarts above barrier potential ?</li>
+        <li>What is forward biased PN junction diode ?</li>
+        <li>I-V relationship</li>
+    </div>
 <!-- Feedback Workplace -->
       <div id="feedbaack">
         <iframe id="myIframe" src="https://docs.google.com/forms/d/e/1FAIpQLSdpcXMEZmg41Cw1qmuq8c97csYlcJoYRXdPHPjdx7L16A56lQ/viewform?embedded=true" width="100%" height="1050" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>

@@ -160,8 +160,7 @@ function Simulation(){
     procedure.style.display="none";
     prequiz.style.display="none";
     feedbaack.style.display="none";
-
-
+    outcome.style.display="none";
 }
 function Procedure(){
     aim.style.display="none";
@@ -170,7 +169,7 @@ function Procedure(){
     procedure.style.display="block";
     prequiz.style.display="none";
     feedbaack.style.display="none";
-
+    outcome.style.display="none";
 }
 function Theory(){    
     aim.style.display="none";
@@ -179,7 +178,7 @@ function Theory(){
     procedure.style.display="none";
     prequiz.style.display="none";
     feedbaack.style.display="none";
-
+    outcome.style.display="none";
 }
 function Aim(){
     aim.style.display="block";
@@ -188,6 +187,16 @@ function Aim(){
     procedure.style.display="none";
     prequiz.style.display="none";
     feedbaack.style.display="none";
+    outcome.style.display="none";
+}
+function Outcome(){
+  aim.style.display="none";
+  simulation.style.display="none";
+  theory.style.display="none";
+  procedure.style.display="none";
+  prequiz.style.display="none";
+  feedbaack.style.display="none";
+  outcome.style.display="block";
 
 }
 function Feedbaack(){
@@ -197,7 +206,7 @@ function Feedbaack(){
   procedure.style.display="none";
   prequiz.style.display="none";
   feedbaack.style.display="block";
-  
+  outcome.style.display="none";
 }
 function Prequiz(){
     aim.style.display="none";
@@ -206,6 +215,7 @@ function Prequiz(){
     theory.style.display="none";
     procedure.style.display="none";
     prequiz.style.display="block";
+    outcome.style.display="none";
     function buildQuiz(){
      
       const output = [];

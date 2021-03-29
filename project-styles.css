@@ -30,6 +30,12 @@ footer{ font-weight: bold;}
   gap: 5px;
   grid-auto-rows: minmax(100px, auto);
 }
+.wrapper2 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5px;
+  grid-auto-rows: minmax(100px, auto);
+}
 
 .simu_buttons{
   height: 150px;
@@ -69,7 +75,7 @@ footer{ font-weight: bold;}
   border-radius: 20px; 
   padding: 2%;margin: 10px 0px 200px 0px;
 }
-
+.theoryimg{float:inline-start;width: 30%;}
 .book-cover {float: right;width: 11%;}
 .youtube {text-align: center;}
 .youtube iframe {max-width: 100%;}
@@ -250,7 +256,7 @@ color:white;
 }
 
 }
-#theory, #procedure, #simulation, #step2, #step3, #step4,#step5,#step6,#step7,#prequiz, #feedbaack {
+#theory, #procedure, #simulation, #step2, #step3, #step4,#step5,#step6,#step7,#prequiz, #feedbaack,#outcome {
   display: none;
 }
 
@@ -285,9 +291,9 @@ float:right;
 position:relative;
 width: 72%;
 overflow-x: hidden;
-overflow-y: scroll;
+overflow-y: hidden;
 scroll-behavior: smooth;
-max-height:70.5vh;
+max-height:80.5vh;
 }
 
 .row:after {
