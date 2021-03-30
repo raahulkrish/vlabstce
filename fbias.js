@@ -1,16 +1,43 @@
+function myTimeout00() {
+    document.getElementById('myImg').src = "1.gif";
+    } 
+function myTimeout11() {
+    document.getElementById('myImg').src = "2.gif";
+    }
+function myTimeout22() {
+    document.getElementById('myImg').src = "3.gif";
+    }
+
+function myTimeout33() {
+    document.getElementById('myImg').src = "0v.gif";
+    }
+    
 function fbias(asdf) {
     document.getElementById('bnn').innerHTML=asdf;
     var v = asdf;
-    if(v==0)
+    if(v>=0 && v<0.1)
+    {
+
+        step3.style.display="block";
+        step4.style.display="none";
+        step5.style.display="none";
+        step6.style.display="none";
+        step7.style.display="none";
+        document.getElementById('myImg').src= "Snapshot_1.gif";
+    }
+    else if(v==0.1)
     {
         step3.style.display="none";
         step4.style.display="block";
         step5.style.display="none";
         step6.style.display="none";
         step7.style.display="none";
-        document.getElementById('myImg').src= "0v.gif";
+        setTimeout(myTimeout00, 0)
+        setTimeout(myTimeout11, 700) 
+        setTimeout(myTimeout22, 1200)
+        setTimeout(myTimeout33, 1700)
     }
-    else if(v>0 && v<=0.53)
+    else if(v>=0.11 && v<=0.53)
     {
         step3.style.display="none";
         step4.style.display="block";

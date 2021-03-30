@@ -11,9 +11,6 @@ function enable() {
     if (check==1)
     {
     document.getElementById("s1").disabled = false;
-    setTimeout(myTimeout00, 1800)
-    setTimeout(myTimeout11, 2500) 
-    setTimeout(myTimeout22, 3000)
     }
     else
     {
@@ -33,15 +30,7 @@ function timedText1(){
   setTimeout(myTimeout5, 6000)
  }   
     
-function myTimeout00() {
-    document.getElementById('myImg').src = "1.gif";
-    } 
-function myTimeout11() {
-    document.getElementById('myImg').src = "2.gif";
-    }
-function myTimeout22() {
-    document.getElementById('myImg').src = "3.gif";
-    }
+
 
 
 function myTimeout0() {
