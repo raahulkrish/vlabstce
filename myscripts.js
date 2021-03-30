@@ -4,6 +4,9 @@ function disable() {
     document.getElementById("s1").disabled = true;
     }
 
+function enable2(){
+  document.getElementById("interval1").disabled = false;
+}    
 function enable() {
     if (check==1)
     {
@@ -21,11 +24,14 @@ function enable() {
 function timedText() {
     setTimeout(myTimeout0, 900)
     setTimeout(myTimeout1, 1000) 
-    setTimeout(myTimeout2, 1030) 
-   setTimeout(myTimeout3, 1070)
-   setTimeout(myTimeout4, 6070)
-   
+    setTimeout(myTimeout2, 1030)
+    setTimeout(myTimeout3, 1070) 
     }
+ 
+function timedText1(){
+  setTimeout(myTimeout4, 1000)
+  setTimeout(myTimeout5, 6000)
+ }   
     
 function myTimeout00() {
     document.getElementById('myImg').src = "1.gif";
@@ -48,11 +54,15 @@ function myTimeout2() {
     document.getElementById('myImg').src = "jnformation112.gif";
     }
 function myTimeout3() {
+    document.getElementById('myImg').src = "Snapshot_6.gif";
+    check=1;
+    }    
+function myTimeout4() {
     document.getElementById('myImg').src = "depletion_layer1112.gif";
     }
-function myTimeout4() {
+function myTimeout5() {
     document.getElementById('myImg').src = "Snapshot_1.gif";
-    check=1;
+    
 }
 
 function diodeval()
@@ -149,8 +159,8 @@ function Simulation(){
     theory.style.display="none";
     procedure.style.display="none";
     prequiz.style.display="none";
-
-
+    feedbaack.style.display="none";
+    outcome.style.display="none";
 }
 function Procedure(){
     aim.style.display="none";
@@ -158,6 +168,8 @@ function Procedure(){
     theory.style.display="none";
     procedure.style.display="block";
     prequiz.style.display="none";
+    feedbaack.style.display="none";
+    outcome.style.display="none";
 }
 function Theory(){    
     aim.style.display="none";
@@ -165,6 +177,8 @@ function Theory(){
     theory.style.display="block";
     procedure.style.display="none";
     prequiz.style.display="none";
+    feedbaack.style.display="none";
+    outcome.style.display="none";
 }
 function Aim(){
     aim.style.display="block";
@@ -172,13 +186,36 @@ function Aim(){
     theory.style.display="none";
     procedure.style.display="none";
     prequiz.style.display="none";
+    feedbaack.style.display="none";
+    outcome.style.display="none";
+}
+function Outcome(){
+  aim.style.display="none";
+  simulation.style.display="none";
+  theory.style.display="none";
+  procedure.style.display="none";
+  prequiz.style.display="none";
+  feedbaack.style.display="none";
+  outcome.style.display="block";
+
+}
+function Feedbaack(){
+  aim.style.display="none";
+  simulation.style.display="none";
+  theory.style.display="none";
+  procedure.style.display="none";
+  prequiz.style.display="none";
+  feedbaack.style.display="block";
+  outcome.style.display="none";
 }
 function Prequiz(){
     aim.style.display="none";
+    feedbaack.style.display="none";
     simulation.style.display="none";
     theory.style.display="none";
     procedure.style.display="none";
     prequiz.style.display="block";
+    outcome.style.display="none";
     function buildQuiz(){
      
       const output = [];
@@ -269,3 +306,9 @@ function Prequiz(){
     buildQuiz();
     submitButton.addEventListener('click', showResults);
   }
+  window.onload=function() {
+    document.getElementById("interval1").disabled=true;
+    document.getElementById("interval2").disabled=true;
+
+  }
+
