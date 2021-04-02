@@ -203,6 +203,7 @@ function reset()
       document.getElementById("current").value = "0";
       document.getElementById("bnn").value = "0";
       document.getElementById("bnn2").value = "0";
+      document.getElementById("s1").disabled = true;
       step3.style.display="none";  
       step4.style.display="none";
       step5.style.display="none";
