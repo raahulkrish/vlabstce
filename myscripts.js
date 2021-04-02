@@ -300,4 +300,3 @@ function Prequiz(){
     document.getElementById("interval2").disabled=true;
 
   }
-

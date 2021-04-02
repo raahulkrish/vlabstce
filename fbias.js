@@ -192,3 +192,24 @@ function stepfour()
     step4.style.display="block";
 
 }
+function reset() 
+  {
+      document.getElementById('myImg').src= "p-n221.gif";
+      document.getElementById("interval1").disabled=true;
+      document.getElementById("interval2").disabled=true;
+      document.getElementById("interval").disabled= false;
+      document.getElementById("s1").value = "0";
+      document.getElementById("diode").value = "0";
+      document.getElementById("current").value = "0";
+      document.getElementById("bnn").value = "0";
+      document.getElementById("bnn2").value = "0";
+      step3.style.display="none";  
+      step4.style.display="none";
+      step5.style.display="none";
+      step6.style.display="none";
+      step7.style.display="none";
+      step1.style.display="block";
+      step2.style.display="none";
+      
+      
+  }
