@@ -199,8 +199,8 @@ function reset()
       document.getElementById("interval2").disabled=true;
       document.getElementById("interval").disabled= false;
       document.getElementById("s1").value = "0";
-      document.getElementById("diode").value = "0";
-      document.getElementById("current").value = "0";
+      document.getElementById("diode").value = "0 V";
+      document.getElementById("current").value = "0 A";
       document.getElementById("bnn").value = "0";
       document.getElementById("bnn2").value = "0";
       document.getElementById("s1").disabled = true;
