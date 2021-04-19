@@ -358,3 +358,39 @@ margin-top: 1%;
 	cursor: pointer;
 	margin-bottom: 20px;
 }
+.backbutton{
+  background:#4CAF50;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.backbutton:hover{
+  background:#F5F5F5;
+  color:#4CAF50;
+}
+.backbutton:before,.backbutton:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #4CAF50;
+  transition:400ms ease all;
+}
+.backbutton:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.backbutton:hover:before,.backbutton:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
