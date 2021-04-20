@@ -77,10 +77,10 @@
                 <br>
                 <button class="button button1" id="interval" onclick="timedText();enable2();this.disabled = true;steptwo();interval1.disabled =false">Form P-N Junction</button>
                 <button class="button button1" id="interval1" onclick="timedText1();this.disabled = true;stepthree();interval2.disabled = false">Diffusion</button>
-                <button class="button button1" id="interval2" onclick="enable();this.disabled= true;stepthree()">Apply Voltage</button><br><br>
+                <button class="button button1" id="interval2" onclick="enable();this.disabled= true;stepfour()">Apply Voltage</button><br><br>
                 <!--<button class="button button1" onClick="history.go(0)">Reset</button><br><br><br>-->
                 <strong><center>VOLTAGE SLIDER</center></strong>
-                <input id="s1" type="range" min="0" max="5" step="0.01" value = "0" class="slider" oninput="bnn.value=s1.value;bnn2.value=s1.value;currentval();diodeval();fbias(this.value);" onchange="fbias(this.value);" /><br>
+                <input id="s1" type="range" min="0" max="56" step="8" value = "0" class="slider" oninput="bnn.value=s1.value;bnn2.value=s1.value;currentvalrb();diodevalrb();rbias(this.value);" onchange="rbias(this.value);" /><br>
                 <output id="bnn2" name="Voltage" for="s1">0</output>
               </div>  
             </center>
@@ -99,28 +99,27 @@
               <div id="step3">
                 Immediately after the junction is formed, due to non-uniform concentration on both sides, 
                 electrons and holes starts moving across the junction. This is Diffusion. 
-                Now, click "Apply Voltage" button to turn on the supply and vary the slider in steps of 0.05V to 
-                observe uniform concentration.           
+                Now, click "Apply Voltage" button to turn on the supply and vary the slider in steps of 8 V to 
+                observe depletion region extension.           
               </div>
               <div id="step4">
                 Immobile charges are accumulated near the junction and acts as a barrier (depletion region) and stops the flow 
                 of charge carriers across the junction.
-                We need charge carriers flow across the junction to make the device ON. Keep on varying the slider in step of 0.1V 
+                Now , the negative is connected to p region and positive is connected to n region. Keep on varying the slider in step of 8 V 
                 to see what is coming up.  
               </div>
               <div id="step5">
-                YES ! Now the flow of electrons and holes across the junction is <strong>RESTARTED</strong>
-                which is nothing but the charge carriers has gained energy more than the barrier potential
-                and thus the force towards the depletion region will be more making the depletion region 
-                thinner.
+                YES ! Now the flow of electrons and holes across the junction is <strong>RESTRICTED</strong>
+                which is nothing but the negative terminal attracts holes in the p region leaving some immobile charge carriers.
+                 Similarly for n region vice versa.
               </div>
               <div id="step6">
-                As we observe while increasing voltage across the diode, 
-                more free electrons gets generated thus mobility of electrons increases and current also increases.
+                Very small amount of current flows due to restricted movement of charge carriers. Hence diode never passes barrier potential as depletion region keeps on widens thus increasing the barrier potential.
+                 Reverse bias condition is similar to a parallel plate capacitor. 
               </div>
               <div id="step7">
-                At some point more electrons in the junction lead to velocity saturation and thus speed saturates. 
-                So, after this even for a small amount of voltage there will be huge current growing exponentially.
+                At some point if reverse voltage is increased beyond particular value say 50 V for 1n4001 diode, 
+                large reverse current will flow damaging the crystal structure of the diode.
               </div>
             </center>
             </div>

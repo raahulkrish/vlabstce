@@ -11,169 +11,201 @@ function myTimeout22() {
 function myTimeout33() {
     document.getElementById('myImg').src = "0v.gif";
     }
+
     
-function fbias(asdf) {
+    function myTimeoutr0() {
+        document.getElementById('myImg').src = "1dep.gif";
+        } 
+    function myTimeoutr1() {
+        document.getElementById('myImg').src = "FreezeFrame1.gif";
+        }
+    function myTimeoutr2() {
+        document.getElementById('myImg').src = "2dep.gif";
+        } 
+    function myTimeoutr3() {
+        document.getElementById('myImg').src = "FreezeFrame2.gif";
+        }
+    function myTimeoutr4() {
+        document.getElementById('myImg').src = "3dep.gif";
+        } 
+    function myTimeoutr5() {
+        document.getElementById('myImg').src = "FreezeFrame3.gif";
+        }
+    function myTimeoutr6() {
+        document.getElementById('myImg').src = "4dep.gif";
+        } 
+    function myTimeoutr7() {
+        document.getElementById('myImg').src = "FreezeFrame4.gif";
+        }
+    function myTimeoutr8() {
+        document.getElementById('myImg').src = "5dep.gif";
+        } 
+    function myTimeoutr9() {
+        document.getElementById('myImg').src = "FreezeFrame5.gif";
+        }
+    function myTimeoutr10() {
+        document.getElementById('myImg').src = "6dep.gif";
+        } 
+    function myTimeoutr11() {
+        document.getElementById('myImg').src = "FreezeFrame6.gif";
+        }    
+
+
+
+function rbias(asdf) {
     document.getElementById('bnn').innerHTML=asdf;
     var v = asdf;
-    if(v>=0 && v<0.1)
+    if(v==0)
     {
-
-        step3.style.display="block";
+        step3.style.display="none";
+        step4.style.display="block";
+        step5.style.display="none";
+        step6.style.display="none";
+        step7.style.display="none";
+        document.getElementById('myImg').src = "0v.gif";
+        myTimeoutr0.display="none";
+        myTimeoutr1.display="none";
+        myTimeoutr2.display="none";
+        myTimeoutr3.display="none";
+        myTimeoutr4.display="none";
+        myTimeoutr5.display="none";
+        myTimeoutr6.display="none";
+        myTimeoutr7.display="none";
+        myTimeoutr8.display="none";
+        myTimeoutr9.display="none";
+        myTimeoutr10.display="none";
+        myTimeoutr11.display="none";
+    }
+    else if(v>0 && v<=8)
+    {
+        step3.style.display="none";
         step4.style.display="none";
-        step5.style.display="none";
+        step5.style.display="block";
         step6.style.display="none";
         step7.style.display="none";
-        document.getElementById('myImg').src= "Snapshot_1.gif";
+        setTimeout(myTimeoutr0, 0)
+        setTimeout(myTimeoutr1, 2014)
+        myTimeoutr2.display="none";
+        myTimeoutr3.display="none";
+        myTimeoutr4.display="none";
+        myTimeoutr5.display="none";
+        myTimeoutr6.display="none";
+        myTimeoutr7.display="none";
+        myTimeoutr8.display="none";
+        myTimeoutr9.display="none";
+        myTimeoutr10.display="none";
+        myTimeoutr11.display="none";
     }
-    else if(v==0.1)
-    {
-        step3.style.display="none";
-        step4.style.display="block";
-        step5.style.display="none";
-        step6.style.display="none";
-        step7.style.display="none";
-        setTimeout(myTimeout00, 0)
-        setTimeout(myTimeout11, 700) 
-        setTimeout(myTimeout22, 1200)
-        setTimeout(myTimeout33, 1700)
-    }
-    else if(v>=0.11 && v<=0.53)
-    {
-        step3.style.display="none";
-        step4.style.display="block";
-        step5.style.display="none";
-        step6.style.display="none";
-        step7.style.display="none";
-        document.getElementById('myImg').src= "06.gif";
-    }
-    else if(v >= 0.54 && v <= 0.58 )
+    else if(v >8 && v <= 16 )
     {      
         step3.style.display="none";  
         step4.style.display="none";
         step5.style.display="block";
         step6.style.display="none";
         step7.style.display="none";
-        document.getElementById('myImg').src= "fbiasworkloop1.gif";
+        setTimeout(myTimeoutr2, 0)
+        setTimeout(myTimeoutr3, 2015)
+        myTimeoutr0.display="none";
+        myTimeoutr1.display="none";
+        myTimeoutr4.display="none";
+        myTimeoutr5.display="none";
+        myTimeoutr6.display="none";
+        myTimeoutr7.display="none";
+        myTimeoutr8.display="none";
+        myTimeoutr9.display="none";
+        myTimeoutr10.display="none";
+        myTimeoutr11.display="none";
     }
-    else if(v > 0.58 && v <= 0.6 )
+    else if(v > 16 && v <= 24 )
     {
         step3.style.display="none";  
         step4.style.display="none";
         step5.style.display="none";
         step6.style.display="block";
         step7.style.display="none";
-        document.getElementById('myImg').src= "fbiasworkloop1.5.gif";
+        setTimeout(myTimeoutr4, 0)
+        setTimeout(myTimeoutr5, 2014)
+        myTimeoutr0.display="none";
+        myTimeoutr1.display="none";
+        myTimeoutr2.display="none";
+        myTimeoutr3.display="none";
+        myTimeoutr6.display="none";
+        myTimeoutr7.display="none";
+        myTimeoutr8.display="none";
+        myTimeoutr9.display="none";
+        myTimeoutr10.display="none";
+        myTimeoutr11.display="none";
     }
-    else if(v > 0.6 && v <= 0.65 )
+    else if(v > 24 && v <= 32 )
     {
         step3.style.display="none";  
         step4.style.display="none";
         step5.style.display="none";
         step6.style.display="block";
         step7.style.display="none";
-        document.getElementById('myImg').src= "fbiasworkloop2.gif";
+        setTimeout(myTimeoutr6, 0)
+        setTimeout(myTimeoutr7, 2014)
+        myTimeoutr0.display="none";
+        myTimeoutr1.display="none";
+        myTimeoutr4.display="none";
+        myTimeoutr5.display="none";
+        myTimeoutr2.display="none";
+        myTimeoutr3.display="none";
+        myTimeoutr8.display="none";
+        myTimeoutr9.display="none";
+        myTimeoutr10.display="none";
+        myTimeoutr11.display="none";
     }
-    else if(v > 0.65 && v <= 0.7 )
+    else if(v > 32 && v <= 40 )
     {
         step3.style.display="none";  
         step4.style.display="none";
         step5.style.display="none";
         step6.style.display="block";
         step7.style.display="none";
-        document.getElementById('myImg').src= "fbiasworkloop2.5.gif";
+        setTimeout(myTimeoutr8, 0)
+        setTimeout(myTimeoutr9, 2014)
+        myTimeoutr0.display="none";
+        myTimeoutr1.display="none";
+        myTimeoutr4.display="none";
+        myTimeoutr5.display="none";
+        myTimeoutr6.display="none";
+        myTimeoutr7.display="none";
+        myTimeoutr2.display="none";
+        myTimeoutr3.display="none";
+        myTimeoutr10.display="none";
+        myTimeoutr11.display="none";
     }
-    else if(v > 0.7 && v <= 0.72 )
+    else if(v > 40 && v <= 48 )
     {
         step3.style.display="none";  
         step4.style.display="none";
         step5.style.display="none";
         step6.style.display="block";
         step7.style.display="none";
-        document.getElementById('myImg').src= "fbiasworkloop3.gif";
+        setTimeout(myTimeoutr10, 0)
+        setTimeout(myTimeoutr11, 2020)
+        myTimeoutr0.display="none";
+        myTimeoutr1.display="none";
+        myTimeoutr4.display="none";
+        myTimeoutr5.display="none";
+        myTimeoutr6.display="none";
+        myTimeoutr7.display="none";
+        myTimeoutr8.display="none";
+        myTimeoutr9.display="none";
+        myTimeoutr2.display="none";
+        myTimeoutr3.display="none";
     }
-    else if(v > 0.72 && v <= 0.74 )
-    {
-        step3.style.display="none";  
-        step4.style.display="none";
-        step5.style.display="none";
-        step6.style.display="block";
-        step7.style.display="none";
-        document.getElementById('myImg').src= "fbiasworkloop3.5.gif";
-    }
-    else if(v > 0.74 && v <= 0.76 )
-    {
-        step3.style.display="none";  
-        step4.style.display="none";
-        step5.style.display="none";
-        step6.style.display="block";
-        step7.style.display="none";
-        document.getElementById('myImg').src= "fbiasworkloop4.gif";
-    }
-    else if(v > 76 && v <= 0.77 )
-    {
-        step3.style.display="none";  
-        step4.style.display="none";
-        step5.style.display="none";
-        step6.style.display="block";
-        step7.style.display="none";
-        document.getElementById('myImg').src= "fbiasworkloop4.5.gif";
-    }
-    else if(v > 0.77 && v <= 2 )
-    {
-        step3.style.display="none";  
-        step4.style.display="none";
-        step5.style.display="none";
-        step6.style.display="block";
-        step7.style.display="none";
-        document.getElementById('myImg').src= "fbiasworkloop5.gif";
-    }
-    else if(v > 2 && v <= 2.5 )
-    {
-        step3.style.display="none";  
-        step4.style.display="none";
-        step5.style.display="none";
-        step6.style.display="block";
-        step7.style.display="none";
-        document.getElementById('myImg').src= "fbiasworkloop6.gif";
-    }
-    else if(v > 2.5 && v <= 3)
-    {
-        step3.style.display="none";  
-        step4.style.display="none";
-        step5.style.display="none";
-        step6.style.display="block";
-        step7.style.display="none";
-        document.getElementById('myImg').src= "fbiasworkloop7.gif";
-    }
-    else if(v > 3 && v <= 3.5 )
+    else if(v > 48 && v <= 56 )
     {
         step3.style.display="none";  
         step4.style.display="none";
         step5.style.display="none";
         step6.style.display="none";
         step7.style.display="block";
-        document.getElementById('myImg').src= "fbiasworkloop8.gif";
     }
-    else if(v > 3.5 && v <= 4 )
-    {
-        step3.style.display="none";  
-        step4.style.display="none";
-        step5.style.display="none";
-        step6.style.display="none";
-        step7.style.display="block";
-        document.getElementById('myImg').src= "fbiasworkloop9.gif";
-    }
-    else if(v > 4 && v <= 5 )
-    {
-        step3.style.display="none";  
-        step4.style.display="none";
-        step5.style.display="none";
-        step6.style.display="none";
-        step7.style.display="block";
-        document.getElementById('myImg').src= "fbiasworkloop10.gif";
-    }
-    
 }
+
 function steptwo()
 {
     step1.style.display="none";
