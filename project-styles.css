@@ -223,6 +223,7 @@ background:linear-gradient(45deg,#3a6186,#89253e);
 border-radius:50px;
 color:white;
 }
+
 }
 
 @media only screen and (max-width:665px)
@@ -254,7 +255,7 @@ color:white;
   line-height: 30px;  
   border-radius: 10px;
 }
-#mininav a:hover{
+#mininav a:hover {
 background:linear-gradient(45deg,#3a6186,#89253e);
 border-radius:50px;
 color:white;
@@ -359,7 +360,7 @@ margin-top: 1%;
 	margin-bottom: 20px;
 }
 .backbutton{
-  background:#4CAF50;
+  background:linear-gradient(45deg,#3a6186,#89253e);
   color:#fff;
   border:none;
   position:relative;
@@ -372,7 +373,7 @@ margin-top: 1%;
 }
 .backbutton:hover{
   background:#F5F5F5;
-  color:#4CAF50;
+  color:#493D26;
 }
 .backbutton:before,.backbutton:after{
   content:'';
@@ -381,7 +382,7 @@ margin-top: 1%;
   right:0;
   height:2px;
   width:0;
-  background: #4CAF50;
+  background:linear-gradient(45deg,#3a6186,#89253e);
   transition:400ms ease all;
 }
 .backbutton:after{
