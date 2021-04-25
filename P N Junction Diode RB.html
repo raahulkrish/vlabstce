@@ -59,7 +59,7 @@
         <div class="wrapper">
           <div  class="wrapper2">
             <div>
-              <img id="myImg" src="p-n221.gif" onload="this.onload=null;disable()" width="642px" height="388.2px">
+              <img id="myImg" src="p-n221rb.gif" onload="this.onload=null;disable()" width="642px" height="388.2px">
             </div>
             <div>
               <center><button class="button button1" onClick="reset()">Reset</button></center>
@@ -75,9 +75,9 @@
             <center>
               <div class="simu_buttons">
                 <br>
-                <button class="button button1" id="interval" onclick="timedText();enable2();this.disabled = true;steptwo();interval1.disabled =false">Form P-N Junction</button>
-                <button class="button button1" id="interval1" onclick="timedText1();this.disabled = true;stepthree();interval2.disabled = false">Diffusion</button>
-                <button class="button button1" id="interval2" onclick="enable();this.disabled= true;stepfour()">Apply Voltage</button><br><br>
+                <button class="button button1" id="interval" onclick="timedTextrb();enable2();this.disabled = true;steptwo();interval1.disabled =false">Form P-N Junction</button>
+                <button class="button button1" id="interval1" onclick="timedText1rb();this.disabled = true;stepthree();interval2.disabled = false">Diffusion</button>
+                <button class="button button1" id="interval2" onclick="enablerb();this.disabled= true;stepfour()">Apply Voltage</button><br><br>
                 <!--<button class="button button1" onClick="history.go(0)">Reset</button><br><br><br>-->
                 <strong><center>VOLTAGE SLIDER</center></strong>
                 <input id="s1" type="range" min="0" max="56" step="8" value = "0" class="slider" oninput="bnn.value=s1.value;bnn2.value=s1.value;currentvalrb();diodevalrb();rbias(this.value);" onchange="rbias(this.value);" /><br>
