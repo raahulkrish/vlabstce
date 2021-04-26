@@ -215,9 +215,9 @@ function currentvalrb()
     }
     else if(Vs==56)
     {    
-    var Cur = 2.3;
+    var Cur = 4.3;
     var I = Cur.toFixed(3);
-    document.getElementById("current").innerHTML= I +' '+ 'A';  
+    document.getElementById("current").innerHTML= I +' '+ 'mA';  
     }
     else
     {
