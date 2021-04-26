@@ -6,7 +6,8 @@ function disable() {
 
 function enable2(){
   document.getElementById("interval1").disabled = false;
-}    
+}
+    
 function enable() {
     if (check==1)
     {

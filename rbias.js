@@ -1,18 +1,51 @@
-function myTimeout00() {
-    document.getElementById('myImg').src = "1.gif";
-    } 
-function myTimeout11() {
-    document.getElementById('myImg').src = "2.gif";
+var checks;
+function enablerb() {
+    if (checks==1)
+    {
+    document.getElementById("s1").disabled = false;
+    document.getElementById('myImg').src = "0vrb.gif";
     }
-function myTimeout22() {
-    document.getElementById('myImg').src = "3.gif";
+    else
+    {
+        alert("Form P-N Junction first");
     }
+}
 
-function myTimeout33() {
-    document.getElementById('myImg').src = "0v.gif";
+function timedTextrb() {
+    setTimeout(myTimeout0, 900)
+    setTimeout(myTimeout1, 1000) 
+    setTimeout(myTimeout2, 1030)
+    setTimeout(myTimeout3, 1070) 
     }
-
+ 
+function timedText1rb(){
+  setTimeout(myTimeout4, 1000)
+  setTimeout(myTimeout5, 6000)
+ }   
     
+
+
+
+function myTimeout0() {
+    document.getElementById('myImg').src = "p-n222rb.gif";
+    } 
+function myTimeout1() {
+    document.getElementById('myImg').src = "p-n2rb.gif";
+    }
+function myTimeout2() {
+    document.getElementById('myImg').src = "jnformation112rb.gif";
+    }
+function myTimeout3() {
+    document.getElementById('myImg').src = "Snapshot_6rb.gif";
+    checks=1;
+    }    
+function myTimeout4() {
+    document.getElementById('myImg').src = "depletion_layer1112rb.gif";
+    }
+function myTimeout5() {
+    document.getElementById('myImg').src = "Snapshot_1rb.gif";
+    
+}    
     function myTimeoutr0() {
         document.getElementById('myImg').src = "1dep.gif";
         } 
@@ -226,7 +259,7 @@ function stepfour()
 }
 function reset() 
   {
-      document.getElementById('myImg').src= "p-n221.gif";
+      document.getElementById('myImg').src= "p-n221rb.gif";
       document.getElementById("interval1").disabled=true;
       document.getElementById("interval2").disabled=true;
       document.getElementById("interval").disabled= false;
