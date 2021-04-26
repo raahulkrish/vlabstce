@@ -348,30 +348,30 @@ function Prequiz(){
     const submitButton = document.getElementById('submit');
     const myQuestions = [
       {
-        question: "1. What is the Forbidden Energy Gap for Conductors ?",
+        question: "1. If the PIV rating of the diode is exceeded,............",
         answers: {
-          a: "Zero",
-          b: "Large",
-          c: "Small"
+          a: "the diode conducts poorly",
+          b: "the diode is destroyed",
+          c: "the diode behaves like a zener diode"
+        },
+        correctAnswer: "b"
+      },
+      {
+        question: "2. Reverse current in a diode is in the order of ?",
+        answers: {
+          a: "µA",
+          b: "mA",
+          c: "A"
         },
         correctAnswer: "a"
       },
       {
-        question: "2. Conduction of a semicondutor device can be increased by ?",
+        question: "3. When diodes are connected in series to increase voltage rating the peak inverse voltage per junction ",
         answers: {
-          a: "reverse biasing",
-          b: "forward biasing",
-          c: "doping"
-        },
-        correctAnswer: "c"
-      },
-      {
-        question: "3. Pick the odd one out.",
-        answers: {
-          a: "Majority carriers are electrons",
-          b: "Minority carriers are holes",
-          c: "Dopants are from group III",
-          d: "Dopants are from group V"
+          a: "should not exceed half the breakdown voltage",
+          b: "should not exceed the breakdown voltage",
+          c: "should not exceed one third the breakdown voltage",
+          d: "may be equal to or less than breakdown voltage"
         },
         correctAnswer: "c"
       }
