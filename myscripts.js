@@ -147,66 +147,33 @@ function currentval()
 function diodevalrb()
 {
     var Vs=Number(document.getElementById("bnn").value);
-    var vd=0.53;
-    if(Vs>=0.54 && Vs<0.7)
+    if(Vs==8)
     {
-        document.getElementById("diode").innerHTML= 0.53+' '+ 'V';
+        document.getElementById("diode").innerHTML= 3+' '+ 'V';
     }
-    else if(Vs>=0.7 && Vs<0.9)
+    else if(Vs==16)
     {
-        document.getElementById("diode").innerHTML= 0.54+' '+ 'V';
+        document.getElementById("diode").innerHTML= 13+' '+ 'V';
     }
-    else if(Vs>=0.9 && Vs<1.1)
+    else if(Vs==24)
     {
-        document.getElementById("diode").innerHTML= 0.58+' '+ 'V';
+        document.getElementById("diode").innerHTML= 13.6+' '+ 'V';
     }
-    else if(Vs>=1.1 && Vs<1.3)
+    else if(Vs==32)
     {
-        document.getElementById("diode").innerHTML= 0.6+' '+ 'V';
+        document.getElementById("diode").innerHTML= 25+' '+ 'V';
     }
-    else if(Vs>=1.3 && Vs<1.5)
+    else if(Vs==40)
     {
-        document.getElementById("diode").innerHTML= 0.63+' '+ 'V';
+        document.getElementById("diode").innerHTML= 36.5+' '+ 'V';
     }
-    else if(Vs>=1.5 && Vs<1.7)
+    else if(Vs==48)
     {
-        document.getElementById("diode").innerHTML= 0.65+' '+ 'V';
+        document.getElementById("diode").innerHTML= 43.5+' '+ 'V';
     }
-    else if(Vs>=1.7 && Vs<1.9)
+    else if(Vs==56)
     {
-        document.getElementById("diode").innerHTML= 0.68+' '+ 'V';
-    }
-    else if(Vs>=1.9 && Vs<2.1)
-    {
-        document.getElementById("diode").innerHTML= 0.7+' '+ 'V';
-    }
-    else if(Vs>=2.1 && Vs<2.3)
-    {
-        document.getElementById("diode").innerHTML= 0.71+' '+ 'V';
-    }
-    else if(Vs>=2.3 && Vs<2.6)
-    {
-        document.getElementById("diode").innerHTML= 0.72+' '+ 'V';
-    }
-    else if(Vs>=2.6 && Vs<2.9)
-    {
-        document.getElementById("diode").innerHTML= 0.73+' '+ 'V';
-    }
-    else if(Vs>=2.9 && Vs<3.3)
-    {
-        document.getElementById("diode").innerHTML= 0.74+' '+ 'V';
-    }
-    else if(Vs>=3.3 && Vs<3.6)
-    {
-        document.getElementById("diode").innerHTML= 0.75+' '+ 'V';
-    }
-    else if(Vs>=3.6 && Vs<4.1)
-    {
-        document.getElementById("diode").innerHTML= 0.76+' '+ 'V';
-    }
-    else if(Vs>=4.1)
-    {
-        document.getElementById("diode").innerHTML= 0.77+' '+ 'V';
+        document.getElementById("diode").innerHTML= 50+' '+ 'V';
     }
     else
     {
@@ -216,18 +183,45 @@ function diodevalrb()
 function currentvalrb()
 {
     var Vs=Number(document.getElementById("bnn").value);
-    var vd=0.53;
-    if(Vs>=0.54)
+    if(Vs==8 || Vs==16)
     {    
-    var V = Vs-vd;
-    var r = 1000;
-    var Cur = V/r*1000;
+    var Cur = 0;
     var I = Cur.toFixed(3);
-    document.getElementById("current").innerHTML= I +' '+ 'mA';  
+    document.getElementById("current").innerHTML= I +' '+ 'µA';  
+    }
+    else if(Vs==24)
+    {    
+    var Cur = 1;
+    var I = Cur.toFixed(3);
+    document.getElementById("current").innerHTML= I +' '+ 'µA';  
+    }
+    else if(Vs==32)
+    {    
+    var Cur = 2;
+    var I = Cur.toFixed(3);
+    document.getElementById("current").innerHTML= I +' '+ 'µA';  
+    }
+    else if(Vs==40)
+    {    
+    var Cur = 3;
+    var I = Cur.toFixed(3);
+    document.getElementById("current").innerHTML= I +' '+ 'µA';  
+    }
+    else if(Vs==48)
+    {    
+    var Cur = 4;
+    var I = Cur.toFixed(3);
+    document.getElementById("current").innerHTML= I +' '+ 'µA';  
+    }
+    else if(Vs==56)
+    {    
+    var Cur = 2.3;
+    var I = Cur.toFixed(3);
+    document.getElementById("current").innerHTML= I +' '+ 'A';  
     }
     else
     {
-        document.getElementById("current").innerHTML= '0 A';
+        document.getElementById("current").innerHTML= 0 + ' '+ 'A';
 
     }
 }
