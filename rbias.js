@@ -81,7 +81,10 @@ function myTimeout5() {
         } 
     function myTimeoutr11() {
         document.getElementById('myImg').src = "FreezeFrame6.gif";
-        }    
+        }
+        function myTimeoutr12() {
+            document.getElementById('myImg').src = "breakdown.gif";
+            }    
 
 
 
@@ -231,6 +234,7 @@ function rbias(asdf) {
     }
     else if(v > 48 && v <= 56 )
     {
+        setTimeout(myTimeoutr12, 0)
         step3.style.display="none";  
         step4.style.display="none";
         step5.style.display="none";
